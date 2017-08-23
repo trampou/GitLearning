@@ -1,0 +1,413 @@
+/*
+作者：陈丽
+最新更新：2017/03/10
+功能：个人报表考勤里面带薪假期页面的样式表
+*/
+
+*{
+    padding:0px;
+    margin:0px;
+}
+/*重写滚动条样式start*/
+/*::-webkit-scrollbar
+{
+    width: 6px;
+    height:6px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb!*:vertical*!
+{
+    height: 6px;
+    background-color: #999999;
+    -webkit-border-radius: 3px;
+}*/
+/*针对自定义滚动条的样式*/
+::-webkit-scrollbar {
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#A9B2BA;
+    border-radius: 10px;
+}
+/*::-webkit-scrollbar-thumb:horizontal
+{
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}*/
+/*重写滚动条样式end*/
+/*公共導行兩個名字中間的那根線*/
+.navigation_block .navigation_block_i div{
+    height:16px;
+    margin-right:13px;
+}
+/*公共導行兩個名字中間的那根線*/
+html,body{
+    width:100%;
+    height:100%;
+    min-width:820px;
+    min-height:600px;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+#vacationStatus_wrap{
+    min-width:820px;
+    min-height:600px;
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+#vacationStatus_wrap>header{
+    min-width:820px;
+    width:100%;
+    height:55px;
+    border-bottom: 1px solid #EEEEEE;
+    /*background:lightcoral;*/
+}
+#vacationStatus_wrap>header>span:nth-of-type(1){
+    display:inline-block;
+    color: #333333;
+    margin-left:15px;
+   /* background:red;*/
+    margin-top:18px;
+    cursor:pointer;
+}
+#vacationStatus_wrap>header>span:nth-of-type(2){
+    display:inline-block;
+    color: #B0BDC9;
+    margin-left:15px;
+    /*background:red;*/
+    margin-top:18px;
+    padding:0px 12px 0px 12px;
+    margin:18px 8px 18px 10px;
+    border-left:1px solid #D8D8D8;
+    border-right:1px solid #D8D8D8;
+    cursor:pointer;
+}
+#vacationStatus_wrap>header>span:nth-of-type(3){
+    color: #B0BDC9;
+    display:inline-block;
+    /*background:red;*/
+    margin-top:18px;
+}
+#vacationStatus_wrap>header>span:nth-of-type(4),#vacationStatus_wrap>header>span:nth-of-type(5),#vacationStatus_wrap>header>span:nth-of-type(6){
+    padding:8px 5px 5px 8px ;
+    /* border:1px solid orange;*/
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+    margin-top:20px;
+    cursor:pointer;
+}
+#vacationStatus_wrap>header>span:nth-of-type(4){
+    margin-right:20px;
+    background:url("../../images/personalStatement/icon－guanbi.svg") no-repeat;
+}
+#vacationStatus_wrap>header>span:nth-of-type(5){
+    margin-right:15px;
+    background:url("../../images/icon－zuidahua.svg") no-repeat;
+}
+#vacationStatus_wrap>header>span:nth-of-type(6){
+    margin-right:15px;
+    background:url("../../images/icon－zuixiaohua.svg") no-repeat;
+}
+#vacationStatus_wrap>article{
+    min-width:800px;
+    min-height:525px;
+    position:absolute;
+    top:65px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing:border-box;
+    /*background:orange;*/
+}
+#vacationStatus_wrap>article>header{
+    min-width:800px;
+    width:100%;
+    height:44px;
+    color: #999999;
+    /*background:lightcoral;*/
+}
+#vacationStatus_wrap>article>header>span:nth-of-type(1){
+    display:inline-block;
+    padding-left:13px;
+    padding-right:9px;
+    margin-left:24px;
+    margin-top:15px;
+    /*background:yellow;*/
+    padding-bottom:7px;
+    cursor:pointer;
+}
+#vacationStatus_wrap .watching{
+    border-bottom:3px solid #546576;
+    color: #333333;
+}
+#vacationStatus_wrap>article>header>span:nth-of-type(2){
+    display:inline-block;
+    padding-left:11px;
+    padding-right:7px;
+    margin-top:15px;
+    /*background:yellow;*/
+    padding-bottom:7px;
+    cursor:pointer;
+}
+#vacationStatus_wrap .vacationTable>div{
+    min-width:760px;
+    position:absolute;
+    left:20px;
+    right:20px;
+    top:46px;
+    bottom:0px;
+    overflow:auto;
+}
+/*剩余假期总览*/
+#vacationStatus_wrap .vacationTable .remainderStatus{
+    box-sizing:border-box;
+    border-collapse:collapse;
+    min-width:760px;
+    min-height:46px;
+    width:100%;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tbody{
+    min-width:760px;
+    /*min-height:272px;*/
+    width:100%;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus td{
+    font-family: Arial;
+    border:1px solid #eeeeee;
+    text-align:center;
+    color:#999999;
+    height: 45px;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr:nth-of-type(1)>td{ /*第一行的所有单元格*/
+    font-family:"microsoft yahei";
+    color:#666666;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr>td:nth-of-type(1){ /*所有行的第一个单元格*/
+    font-family:"microsoft yahei";
+    color:#666666;
+    border-left:none;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr>td:nth-last-of-type(1),#vacationStatus_wrap .vacationTable .remainderStatus tr:nth-last-of-type(1)>td{ /*所有行的最后一个单元格*//*最后一行的所有单元格*/
+    font-family: Arial;
+    font-size: 16px;
+    color: #333333;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr:nth-of-type(1)>td:nth-last-of-type(1){  /*第一行的最后一个单元格*/
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #666666;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr:nth-last-of-type(1)>td:nth-of-type(1){  /*最后一行的第一个单元格*/
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #333333;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tr>td:nth-of-type(5){
+    border-right:none;
+}
+#vacationStatus_wrap .vacationTable .remainderStatus tbody>tr:nth-of-type(2n+1){
+    background: #F9F9F9;
+}
+
+/*固定标题栏*/
+#vacationStatus_wrap .vacationTable .titleMark{
+    height:auto;
+    width:100%;
+    overflow:visible;
+    position:relative;
+   /* padding-right:5px;出现滚动条了才用这个*/
+    box-sizing:border-box;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table{
+    width:100%;
+    min-width:1084px;/*最小总长为1154px,左右边框不算在内的话总长为1154-14=1140px，但下面内容表格有个滚动条占了5px，所以这里的父元素要用padding-right占5px，并且要为border-box，这样才会总体宽度减少5px*/
+    height:45px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(1){
+    border-left:none;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(8){
+    border-right:none;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td{
+    text-align:center;
+    box-sizing:border-box;
+    background:#f9f9f9;
+    color:#666666;
+    font-family:"microsoft yahei";
+    border:1px solid #eeeeee;
+}
+/*固定标题栏*/
+/*固定标题栏和下面的内容表格的单元格是一样宽的*/
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(1),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(1){
+    width:4.2%;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(2),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(2){
+    width:10.5%;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(3),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(3),#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(4),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(4){
+    width:12.1%;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(5),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(5){
+    width:6.5%;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(6),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(6){
+    width:7.5%;
+}
+#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(7),#vacationStatus_wrap .vacationTable .titleMark>table tbody td:nth-of-type(8),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(7),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(8){
+    width:11.5%;
+}
+/*假期使用情况查询*/
+#vacationStatus_wrap .vacationTable div>div{
+    width:100%;
+    height:100%;
+    overflow:hidden;  /*这样表头就能藏起来，又能通过改变偏移量看到，如果是在表头的父元素设置这个，就会令表头无法通过偏移量看到*/
+}
+#vacationStatus_wrap .vacationTable div>div .userTableMark{
+    width:100%;
+    height:auto;
+    overflow:auto;
+}
+#vacationStatus_wrap .vacationTable .useTableMark{
+    width:100%;
+    height:auto;
+    overflow:auto;
+}
+#vacationStatus_wrap .vacationTable .useStatus{
+    width:100%;
+    min-width:1084px;/*最小总长为1154px,左右边框不算在内的话总长为1154-14=1140px，然后还要减去滚动条的5px*/
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+#vacationStatus_wrap .vacationTable .useStatus td{
+    box-sizing:border-box;
+    border:1px solid #eeeeee;
+    text-align:center;
+    height:45px;
+    color:#999999; /*除了标题栏和序号以及请假事由栏*/
+    font-family:Arial;/*数字全为这个字体*/
+    /*background:orange;*/
+}
+#vacationStatus_wrap .vacationTable .useStatus tbody tr:nth-of-type(1)>td{  /*第一行没有上边框*/
+    border-top:none;
+}
+/*序号数字*/
+#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(1):not(.dateMark){
+    font-family:Arial;
+    color:#666666;
+}
+/*合并的时间栏也会应用到上面的样式，所以给所有的时间用同一个样式为dateMark证明是时间样式*/
+/*请假事由*/
+#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(2):not(.dateMark){
+    color:#666666;
+    font-family:"microsoft yahei";
+}
+
+/*除了时间栏外的要用微软雅黑字体*/
+#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(5),#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(6){
+    font-family:"microsoft yahei";
+}
+/*审批中*/
+#vacationStatus_wrap .vacationTable .useStatus .checking{
+    font-family:"microsoft yahei";
+}
+#vacationStatus_wrap .vacationTable .titleMark tbody>tr>td:nth-of-type(6){
+    text-align: center;
+    box-sizing: border-box;
+}
+/*td里面的span*/
+#vacationStatus_wrap .vacationTable .titleMark tbody>tr>td:nth-of-type(6)>span{
+    background:url(../../images/personalStatement/icon_shaixuan_default.svg) no-repeat  #f9f9f9;
+    display:inline-block;
+    width:40px;
+    height:20px;
+    vertical-align:top;
+}
+#vacationStatus_wrap .vacationTable .titleMark tbody>tr>td:nth-of-type(6)>span:hover{
+    background:url(../../images/personalStatement/icon_shaixuan_click.svg) no-repeat  #f9f9f9;
+}
+#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(1){
+    border-left:none;
+}
+#vacationStatus_wrap .vacationTable .useStatus tr>td:nth-of-type(8){
+    border-right:none;
+}
+#vacationStatus_wrap .vacationTable .titleMark~section{
+   /* background:red;*/
+    height:22px;
+    line-height:22px;
+    margin-top:12px;
+}
+#vacationStatus_wrap .vacationTable .titleMark~section>span:nth-of-type(1){
+    font-size: 14px;
+    color: #666666;
+}
+#vacationStatus_wrap .vacationTable .titleMark~section>span:nth-of-type(2){
+    font-size: 16px;
+    color: #333333;
+    margin-left:12px;
+}
+/*固定每个单元格的大小*/
+/*无数据的图片*/
+#vacationStatus_wrap .vacationTable figure{
+    margin-top:18%;
+}
+#vacationStatus_wrap .vacationTable figure>img{
+    display:block;
+    margin:0 auto;
+}
+#vacationStatus_wrap .vacationTable figure>figureCaption{
+    display:block;
+    text-align:center;
+    color:#999999;
+}
+/*通用的提示浮层*/
+#vacationStatus_wrap .commonTipLayer{
+    display:none;
+    position:absolute;
+    background: #FFF7D9;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    padding:9px 15px 9px 15px;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0px;
+    word-break: break-all;
+}
+/*假期类别筛选框*/
+#vacationStatus_wrap .filterSelect{
+    position:absolute;
+    background: #FAFAFA;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    padding:10px 0px 10px 0px;
+    display:none;
+    z-index:999;
+    width: 61px;
+    max-height: 101px;
+    overflow-y: auto;
+}
+#vacationStatus_wrap .filterSelect span{
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0px;
+    height:26px;
+    line-height: 26px;
+    display:block;
+    padding:0px 9px 0px 9px;
+}

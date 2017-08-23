@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.i-select {
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+.i-select-ul {
+	list-style-type:none;
+}
+.i-select-ul ul, .i-select-ul li{
+	list-style-type:none;
+}
+.i-select .select-val {
+    width: 100%;
+    max-width: 100%;
+    height:35px;
+    line-height: 35px;
+}
+
+.i-select:hover .select-val {
+    border-color: #825794;
+}
+.i-select .select-val:after {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 20px;
+    color: #3E3E3E;
+    position:absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.zys-bg-normal{
+    background-color: #f2f4f5;
+}
+.cont-div{
+	width: 96;
+	margin: 0 2%;
+}
+.zys-bg-normal .modal-body-height{
+    overflow-y: hidden;
+    height: 420px;
+}
+
+.zys-bg-normal .full-height{
+    height: 100%;
+}
+
+.zys-bg-normal .iselect-btn-ok{
+    background-color: #1c9238;
+    color: #ffffff;
+}
+
+.zys-bg-normal .zys-bg-write{
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.zys-bg-normal .zys-bg-write .checkbox-border{
+    background-image:url(../../images/icon－xuanze－fuxuan.svg);
+    width:14px;
+    height:14px;
+    margin-right:10px;
+    background-size:100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.zys-bg-normal .zys-bg-write .checkbox-text{
+    font-size: 14px;
+}
+
+.zys-bg-normal .zys-bg-write .i-select-ul, .zys-bg-normal .zys-bg-write .no-child-li{
+    margin-left:20px;
+}
+
+.zys-bg-normal .zys-bg-write .i-select-li{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.zys-bg-normal .zys-bg-write .i-select-li span{
+    vertical-align: middle;
+}
+
+.zys-bg-normal .zys-bg-write .i-select-li .checkbox-border.active{
+    background-image:url(../../images/icon－xuanze－fuxuanxuanzhong.svg);
+}
+
+.zys-bg-normal .zys-bg-write .i-select-li .head-img-normal{
+    border-radius:50%;
+    overflow:hidden;
+    color:#fff;
+    font-size:12px;
+    display:inline-block;
+    text-align:center;
+    height:33px;
+    width:33px;
+    line-height:33px;
+    margin-right: 5px;
+}
+.i-select .head-img-normal{
+    border-radius:50%;
+    overflow:hidden;
+    color:#fff;
+    font-size:12px;
+    display:inline-block;
+    text-align:center;
+    height:30px;
+    width:30px;
+    line-height:30px;
+    margin-right: 10px;
+}
+.zys-bg-normal .zys-bg-write .i-select-li .head-img-normal img{
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+}
+
+.icon-uniE991, .icon-uniE993{
+    font-size: 20px;
+}
+
+.contact_bg_1{background: rgba(123,212,240,1)}
+.contact_bg_2{background: rgba(133,147,156,1)}
+.contact_bg_3{background: rgba(196,237,93,1)}
+.contact_bg_4{background: rgba(242,124,89,1)}
+.contact_bg_5{background: rgba(89,206,242,1)}
+.contact_bg_6{background: rgba(242,89,129,1)}
+.contact_bg_7{background: rgba(69,173,92,1)}
+.contact_bg_8{background: rgba(254,203,84,1)}
+.contact_bg_9{background: rgba(182,81,219,1)}
+.contact_bg_0{background: rgba(87,182,156,1)}
+
+.contact_bg_A{background: rgba(81,219,114,1)}
+.contact_bg_B{background: rgba(123,212,240,1)}
+.contact_bg_C{background: rgba(68,173,145,1)}
+.contact_bg_D{background: rgba(196,237,93,1)}
+.contact_bg_E{background: rgba(242,124,89,1)}
+.contact_bg_F{background: rgba(89,206,242,1)}
+.contact_bg_G{background: rgba(242,89,129,1)}
+.contact_bg_H{background: rgba(118,219,81,1)}
+.contact_bg_I{background: rgba(254,203,84,1)}
+.contact_bg_J{background: rgba(182,81,219,1)}
+.contact_bg_K{background: rgba(154,165,173,1)}
+.contact_bg_L{background: rgba(81,118,219,1)}
+.contact_bg_M{background: rgba(89,206,242,1)}
+.contact_bg_N{background: rgba(96,173,68,1)}
+.contact_bg_O{background: rgba(68,148,173,1)}
+.contact_bg_P{background: rgba(200,89,242,1)}
+.contact_bg_Q{background: rgba(219,81,118,1)}
+.contact_bg_R{background: rgba(254,203,84,1)}
+.contact_bg_S{background: rgba(68,173,145,1)}
+.contact_bg_T{background: rgba(119,135,145,1)}
+.contact_bg_U{background: rgba(187,219,81,1)}
+.contact_bg_V{background: rgba(110,202,154,1)}
+.contact_bg_W{background: rgba(254,203,84,1)}
+.contact_bg_X{background: rgba(138,170,255,1)}
+.contact_bg_Y{background: rgba(86,174,255,1)}
+.contact_bg_Z{background: rgba(81,219,182,1)}

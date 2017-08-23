@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="趣味魔方" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.0.1-个人报表瞬间" transform="translate(-711.000000, -297.000000)">
+            <rect id="Rectangle-path" fill="#FAFBFE" x="0" y="0" width="900" height="600"></rect>
+            <rect id="Rectangle-2" stroke="#EEEEEE" fill="#FFFFFF" x="320" y="66" width="570" height="524" rx="2"></rect>
+            <polygon id="Shape" fill="#94CDFF" opacity="0.1" points="609 236 498 318.479247 540.413684 452 677.586316 452 720 318.479247"></polygon>
+            <path d="M719.672378,318.610725 L609,345.886802" id="Shape" stroke="#64ACED" stroke-width="0.5" opacity="0.2"></path>
+            <g id="Group-6" transform="translate(711.000000, 297.000000)">
+                <circle id="Oval" fill="#31DCF8" cx="17.6" cy="17.9" r="17"></circle>
+                <path d="M25.5,14.2 C25.1,12.1 23.3,10.6 21.2,10.6 C20.9,10.6 20.7,10.6 20.4,10.7 C19.2,10.9 18.3,11.4 17.6,12.3 C16.5,11 15.1,10.5 13.4,10.7 C11.7,10.9 10.2,12.2 9.7,14 C9.4,15.2 9.5,16.3 10.1,17.6 C10.6,18.8 11.4,19.9 12.5,20.9 C13.4,21.7 14.3,22.4 15.1,23.2 L15.6,23.6 C16,23.9 16.4,24.2 16.7,24.5 L16.8,24.5 C17,24.6 17.1,24.7 17.3,24.9 L17.5,25.1 L18.1,24.6 C18.4,24.4 18.6,24.2 18.9,24 L19.4,23.6 C20.6,22.7 21.8,21.7 22.9,20.6 C23.9,19.6 24.6,18.6 25,17.5 C25.6,16.3 25.7,15.2 25.5,14.2 L25.5,14.2 Z" id="Shape" fill="#FFFFFF" opacity="0.6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

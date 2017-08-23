@@ -1,0 +1,54 @@
+li,
+ul {
+  list-style: none;
+}
+
+#container {
+  margin-top: 55px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+#container ul li {
+  border: 1px #CCCCCC;
+  border-style: none;
+  float: left;
+  display: inline-block;
+  height: 74px;
+  width: 74px;
+  margin-right: 14px;
+  margin-top: 43px;
+  cursor: pointer;
+  vertical-align: baseline;
+  visibility: hidden;
+}
+#container ul li a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #999999;
+}
+#container ul li a:hover {
+  color: #666666;
+}
+#container ul li a:hover img {
+  background-color: #F3FAFA;
+}
+#container ul li a img {
+  padding: 2px;
+  position: relative;
+  left: 15px;
+  top: 1px;
+  display: block;
+  height: 44px;
+  width: 44px;
+  margin-bottom: 4px;
+}
+#container ul li a span {
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  background-color: white;
+  z-index: 2;
+}

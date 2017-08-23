@@ -1,0 +1,553 @@
+/*
+ * 应用中心公用组件css
+ * liaocan
+ */
+
+
+/*头部导航*/
+body{
+	font:12px/1.5 \5FAE\8F6F\96C5\9ED1,"Arial Narrow",HELVETICA;
+}
+.navigation_block {
+    height: 55px;
+    line-height: 55px;
+    background-color: #ffffff;
+    /*font-family: "microsoft yahei";*/
+    font-size: 14px;
+    /*color: #546576;*/
+    letter-spacing: 1.33px;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+.windrag{
+	webkit-app-region:drag;
+	-webkit-user-select: none;
+}
+
+.winnodrag{
+	-webkit-app-region:no-drag;
+}
+
+.navigation_block a{
+	color: #b0bdc9;
+	text-decoration: none;
+}
+
+.navigation_block a:first-child {
+	color: #546576;
+	text-decoration: none;
+}
+
+.navigation_block .navigation_block_i {
+	float: left;
+	padding: 0 4px;
+}
+
+.navigation_block .navigation_block_i div {
+	width: 1px;
+	height: 12px;
+	float: left;
+	margin-top: 21px;
+	border-left: 2px solid #eeeeee;
+	margin-right: 8px;
+}
+
+.navigation_block> .navigation_block_i:first-child {
+	margin-left: 15px;
+}
+
+.navigation_block .window_operation {
+	width: 120px;
+	float: right;
+	height: 35px;
+}
+
+.navigation_block .window_operation .minpage {
+	background: url('../../images/common/icon－zuixiaohua.svg');
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 21px;
+	margin-right: 20px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.navigation_block .window_operation .maxpage {
+	background: url('../../images/common/icon－zuidahua.svg');
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 21px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.navigation_block .window_operation .winpage {
+	background: url('../../images/common/icon－huifu－win.svg');
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 21px;
+	margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.navigation_block .window_operation .closepage {
+	background: url('../../images/common/icon－guanbi.svg');
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 21px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+/*报表部分公共样式*/
+.navigation_block .reviewUser{
+	height: 55px;
+	float: right;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.navigation_block .reviewUser .viewSubList{
+	color: #4584D8;
+	cursor: pointer;
+}
+
+.navigation_block .reviewUser img{
+	margin: -5px 12px 0px 24px;
+}
+
+.navigation_block .reviewUser .viewUserName{
+	color: #C5C5C5;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-right: 18px;
+}
+/*报表部分公共样式结束*/
+
+
+/*下拉组件*/
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/*---滚动条默认显示样式--*/
+
+::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	height: 50px;
+	outline-offset: -2px;
+	outline: 2px solid lightgray;
+	-webkit-border-radius: 4px;
+}
+/*---鼠标点击滚动条显示样式--*/
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: gray;
+	height: 50px;
+	-webkit-border-radius: 4px;
+}
+/*---滚动条大小--*/
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/*---滚动条默认显示样式--*/
+::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+	height: 50px;
+	outline-offset: -2px;
+	outline: 2px solid lightgray;
+	-webkit-border-radius: 4px;
+}
+/*---鼠标点击滚动条显示样式--*/
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: gray;
+	height: 50px;
+	-webkit-border-radius: 4px;
+}
+/*---滚动条大小--*/
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+/*---滚动框背景样式--*/
+
+::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+	-webkit-border-radius: 0;
+}
+
+#look_container {
+	max-height: 250px;
+	position: absolute;
+	overflow: auto;
+	background-color: #fafafa;
+	z-index: 5000;
+}
+
+#look_container .pushbg1 {
+	background: url('../../images/common/push.png') 20px -30px no-repeat;
+}
+
+#look_container .pushbg2 {
+	background: url('../../images/common/push.png') 20px -90px no-repeat;
+}
+#look_container .pushbg3 {
+    background: url('../../images/common/icon_sousuozhiwei.svg') 20px 7px no-repeat;
+	 background-size: 18px;
+}
+
+#look_container .look_content .disabledTa {
+	background-color: #e9e9e9;
+}
+
+#look_container> div > div {
+	line-height: 30px;
+	min-height: 30px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-left: 52px;
+	padding-right: 5px;
+}
+
+
+/*文化关怀tab列表样式开始*/
+.culturalCareNavTabs{
+	width: 100%;
+	font-size: 14px;
+	position: fixed;
+	top: 55px;
+	left: 0px;
+	overflow: hidden;
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #EEEEEE;
+	z-index: 500;
+}
+
+.culturalCareNavTabs a:hover,
+.culturalCareNavTabs a:focus,
+.culturalCareNavTabs a:active {
+	color: inherit;
+	outline: none;
+	text-decoration: none;
+}
+
+.culturalCareNavList{
+	margin: 0px;
+	padding: 12px 0px 8px 10px;
+}
+
+.culturalCareNavList.ccIndex{
+	padding: 10px 0px 10px 10px;
+}
+
+.culturalCareNavList li{
+	float: left;
+	padding: 0px;
+	line-height: 60px;
+	color: #FFFFFF;
+	display: block;
+}
+
+.culturalCareNavList li .navItem{
+	display: block;
+	height: 60px;
+	border-radius: 2px;
+	overflow: hidden;
+	margin-right: 13px;
+}
+
+.culturalCareNavList li.active .navItem,
+.culturalCareNavList li .navItem:hover{
+	height: 64px;
+	margin-top: -4px;
+}
+
+.culturalCareNavList li:nth-child(1) .navItem{
+	background-color: #FF8061;
+}
+
+.culturalCareNavList li:nth-child(2) .navItem{
+	background-color: #FFC567;
+}
+
+.culturalCareNavList li:nth-child(3) .navItem{
+	background-color: #79DAB1;
+}
+
+.culturalCareNavList li:nth-child(4) .navItem{
+	background-color: #5BCAE7;
+}
+
+.culturalCareNavList .navItem .itemPic img{
+	margin: 0px 8px;
+}
+
+.culturalCareNavList .navItem .itemTitle{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+/*文化关怀tab列表样式结束*/
+
+/*layer弹层按钮样式 - 开始*/
+.layui-layer-btn .layui-layer-btn0{
+	background-color: #70BF73;
+	border: 1px solid #39953E;
+}
+
+.layui-layer-btn .layui-layer-btn1{
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+}
+
+.layui-layer-btn a{
+	width: 90px !important;
+}
+
+.layui-layer-btn .layui-layer-btn0:hover{
+	background-color: #61A563 !important;
+	border: 1px solid #39953E !important;
+	opacity: 1 !important;
+}
+
+.layui-layer-btn .layui-layer-btn0:active{
+	background-color: #569559 !important;
+	border: 1px solid #39953E !important;
+	opacity: 1 !important;
+}
+
+.layui-layer-btn .layui-layer-btn1:hover{
+	background: #E1E1E1 !important;
+	border: 1px solid #999999 !important;
+	opacity: 1 !important;
+}
+
+.layui-layer-btn .layui-layer-btn1:active{
+	background: #C6C6C6 !important;
+	border: 1px solid #999999 !important;
+	opacity: 1 !important;
+}
+/*layer弹层取消按钮样式 - 结束*/
+
+/*button样式 - 开始*/
+.kx-btn-confirm, .kx-btn-save{
+	outline: none;
+	width: 90px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0px;
+	font-size: 14px !important;
+	color: #FFFFFF !important;
+	border-radius: 4px !important;
+	background-color: #70BF73 !important;
+	border: 1px solid #39953E !important;
+	outline: none !important;
+}
+
+.kx-btn-confirm:hover, .kx-btn-save:hover{
+	background-color: #61A563 !important;
+}
+
+.kx-btn-confirm:active, .kx-btn-save:active{
+	background-color: #569559 !important;
+}
+
+.kx-btn-cancel, .kx-btn-default{
+	outline: none;
+	width: 90px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0px;
+	color: #999999 !important;
+	border-radius: 4px !important;
+	background-color: #FFFFFF !important;
+	border: 1px solid #999999 !important;
+	outline: none !important;
+}
+
+.kx-btn-cancel:hover, .kx-btn-default:hover{
+	background: #E1E1E1 !important;
+}
+
+.kx-btn-cancel:active, .kx-btn-default:active{
+	background: #C6C6C6 !important;
+}
+
+.kx-btn-confirm:disabled, .kx-btn-save:disabled,
+.kx-btn-cancel:disabled, .kx-btn-default:disabled,
+.kx-btn-confirm.disabled, .kx-btn-save.disabled,
+.kx-btn-cancel.disabled, .kx-btn-default.disabled{
+	color: #FFFFFF !important;
+	background-color: #E1E1E1 !important;
+	border: 1px solid #C6C6C6 !important;
+}
+/*button样式 - 结束*/
+
+/*搜索框样式 - 开始*/
+.kx-search{
+	outline: none;
+	width: 200px;
+	height: 30px;
+	color: #C5C5C5 !important;
+	padding-left: 30px !important;
+	border-radius: 4px !important;
+	border: 1px solid #EEEEEE !important;
+	background: url('../../images/common/icon－searchchengyuan.svg') 5px center no-repeat #F5F5F5 !important;
+}
+
+.kx-search:hover{
+	background: url('../../images/common/icon－searchchengyuan－hov.svg') 5px center no-repeat #F5F5F5 !important;
+}
+
+.kx-search:focus{
+	color: #333333 !important;
+	border: 1px solid #30B2F4 !important;
+	background: url('../../images/common/icon－searchchengyuan－hov.svg') 5px center no-repeat #FFFFFF !important;
+}
+
+.kx-search:focus::-webkit-input-placeholder{
+	color:transparent !important;
+}
+.kx-search:focus:-moz-placeholder{
+	color:transparent !important;
+}
+.kx-search:focus::-moz-placeholder{
+	color:transparent !important;
+}
+.kx-search:focus:-ms-input-placeholder{
+	color:transparent !important;
+}
+
+
+/*搜索框样式 - 结束*/
+
+/*表格样式 - 开始*/
+.kx-table thead tr, .kx-table tbody tr{
+	height: 45px;
+}
+
+.kx-table > thead:first-child > tr:first-child > th{
+	border-top: 1px solid #ECECEC;
+}
+
+.kx-table thead tr th:first-child,
+.kx-table tbody tr td:first-child{
+	border-left: none !important;
+}
+
+.kx-table thead tr th:last-child,
+.kx-table tbody tr td:last-child{
+	border-right: none;
+}
+
+.kx-table thead tr th{
+	color: #000000;
+	background-color: #F9F9F9;
+}
+
+.kx-table tbody > tr:nth-child(even){
+	background-color: #F9F9F9;
+}
+
+.kx-table tbody > tr:hover {
+	background-color: #E8F2FB;
+}
+
+.kx-table thead tr th,
+.kx-table tbody tr td{
+	padding: 4px;
+	border: 1px solid #E1E1E1;
+	text-align: center;
+	vertical-align: middle !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*表格样式 - 结束*/
+
+/*单选框样式 - 开始*/
+.kx-radio{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../../images/common/icon－xuanze－danxuan.svg') center center no-repeat transparent;
+	cursor: pointer;
+}
+
+/*单选选中状态*/
+.kx-radio.checked_y{
+	background: url('../../images/common/icon－xuanze－xuzhong.svg') center center no-repeat transparent;
+}
+/*单选框样式 - 结束*/
+
+/*复选框样式 - 开始*/
+.kx-checkbox{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url('../../images/common/icon－xuanze－fuxuan.svg') center center no-repeat transparent;
+	cursor: pointer;
+}
+
+/*选中状态*/
+.kx-checkbox.checked_y{
+	background: url('../../images/common/icon－xuanze－fuxuanxuanzhong.svg') center center no-repeat transparent;
+}
+
+/*默认选中，不可取消选择*/
+.kx-checkbox.checked_d{
+	background: url('../../images/common/icon－xuanze－fuxuanbukedianji.svg') center center no-repeat transparent;
+}
+/*复选框样式 - 结束*/
+
+/*头像样式*/
+.contact_bg_1{background: rgba(123,212,240,1)}
+.contact_bg_2{background: rgba(133,147,156,1)}
+.contact_bg_3{background: rgba(196,237,93,1)}
+.contact_bg_4{background: rgba(242,124,89,1)}
+.contact_bg_5{background: rgba(89,206,242,1)}
+.contact_bg_6{background: rgba(242,89,129,1)}
+.contact_bg_7{background: rgba(69,173,92,1)}
+.contact_bg_8{background: rgba(254,203,84,1)}
+.contact_bg_9{background: rgba(182,81,219,1)}
+.contact_bg_0{background: rgba(87,182,156,1)}
+
+.contact_bg_A{background: rgba(81,219,114,1)}
+.contact_bg_B{background: rgba(123,212,240,1)}
+.contact_bg_C{background: rgba(68,173,145,1)}
+.contact_bg_D{background: rgba(196,237,93,1)}
+.contact_bg_E{background: rgba(242,124,89,1)}
+.contact_bg_F{background: rgba(89,206,242,1)}
+.contact_bg_G{background: rgba(242,89,129,1)}
+.contact_bg_H{background: rgba(118,219,81,1)}
+.contact_bg_I{background: rgba(254,203,84,1)}
+.contact_bg_J{background: rgba(182,81,219,1)}
+.contact_bg_K{background: rgba(154,165,173,1)}
+.contact_bg_L{background: rgba(81,118,219,1)}
+.contact_bg_M{background: rgba(89,206,242,1)}
+.contact_bg_N{background: rgba(96,173,68,1)}
+.contact_bg_O{background: rgba(68,148,173,1)}
+.contact_bg_P{background: rgba(200,89,242,1)}
+.contact_bg_Q{background: rgba(219,81,118,1)}
+.contact_bg_R{background: rgba(254,203,84,1)}
+.contact_bg_S{background: rgba(68,173,145,1)}
+.contact_bg_T{background: rgba(119,135,145,1)}
+.contact_bg_U{background: rgba(187,219,81,1)}
+.contact_bg_V{background: rgba(110,202,154,1)}
+.contact_bg_W{background: rgba(254,203,84,1)}
+.contact_bg_X{background: rgba(138,170,255,1)}
+.contact_bg_Y{background: rgba(86,174,255,1)}
+.contact_bg_Z{background: rgba(81,219,182,1)}

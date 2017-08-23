@@ -1,0 +1,371 @@
+*{
+    outline: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+div#assetStatement{
+    width: 100%;
+    height: 100%;
+    min-width: 820px;
+    min-height: 600px;
+    background-color: #FAFBFE;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+}
+
+div.assetList {
+    padding: 0px 20px;
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 65px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+div.assetList .nav-tabs {
+    border-bottom: 0;
+}
+
+div.assetList .nav-tabs > li{
+    padding: 0px 16px;
+}
+
+div.assetList .nav-tabs > li.exportList{
+    float: right;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+div.assetList .nav-tabs a{
+    padding: 17px 3px 11px;
+    color: #999999;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+div.assetList .nav-tabs li.active a,
+div.assetList .nav-tabs > li.active > a:hover,
+div.assetList .nav-tabs > li.active > a:focus{
+    color: #333333;
+    border: none;
+    border-bottom: 2px solid #7E7E7E;
+    background-color: transparent;
+}
+
+div.assetList .tab-content{
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    bottom: 12px;
+    left: 20px;
+    right: 20px;
+}
+
+div.assetList .tab-content .tab-pane{
+    height: 100%;
+    overflow: hidden;
+}
+
+div.assetList .tab-content .assetListTable{
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 45px;
+    /*max-height: calc(100% - 45px);*/
+}
+
+div.assetList .tab-content .assetListTable > div:not(.scroll_Div){
+    text-align: center;
+    margin: 126px auto auto;
+    color: #C5C5C5;
+    letter-spacing: 1px;
+}
+
+div.assetList .tab-content .assetListTable .scroll_Div{
+    overflow: auto;
+    height: 100%;
+}
+
+div.assetList .tab-content .assetListTable table.fixed_head{
+    table-layout: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+div.assetList .tab-content table{
+    table-layout: fixed;
+    margin: 0px auto;
+}
+
+/*div.assetList #currentAsset table{
+    min-width: 1082px;
+}*/
+
+div.assetList .tab-content table thead tr,
+div.assetList .tab-content table tbody tr:nth-child(even){
+    background-color: #F7F7F7;
+}
+
+div.assetList .tab-content table thead tr th,
+div.assetList .tab-content table tbody tr td{
+    font-weight: normal;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #ECECEC;
+}
+
+div.assetList .tab-content table thead tr th.sortColumn{
+    cursor: pointer;
+}
+
+div.assetList .tab-content table thead tr th.sortColumn .sortPic {
+    padding-right: 15px;
+    background: url('../../images/common/icon－xiangxia－default.svg') left center no-repeat;
+}
+
+div.assetList .tab-content table thead tr th.sortColumn.active .sortPic {
+    background: url('../../images/common/icon－xiangxia－click.svg') left center no-repeat;
+}
+
+div.assetList .tab-content table thead tr th.sortColumn.active.ascending .sortPic {
+    background: url('../../images/common/icon－xiangshang.svg')left center no-repeat;
+}
+
+div.assetList .tab-content table tbody tr td{
+    font-size: 12px;
+    color: #333333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div.assetList .tab-content table tbody tr td:first-child,
+div.assetList .tab-content #currentAsset table tbody tr td:nth-child(2),
+div.assetList .tab-content #historicalAsset table tbody tr td:nth-child(3){
+    color: #999999;
+}
+
+div.assetList .tab-content table thead tr th{
+    border-top: 1px solid #ECECEC !important;
+}
+
+div.assetList #currentAsset table thead tr th{
+    width: 12%;
+}
+
+div.assetList #currentAsset table thead tr th:first-child{
+    width: 6%;
+}
+
+div.assetList #currentAsset table thead tr th:nth-child(3),
+div.assetList #currentAsset table thead tr th:nth-child(6){
+    width: 15%;
+}
+div.assetList #currentAsset table thead tr th:nth-child(4),
+div.assetList #currentAsset table thead tr th:nth-child(5){
+    width: 14%;
+}
+
+div.assetList #historicalAsset table thead tr th{
+    width: 14%;
+}
+
+div.assetList #historicalAsset table thead tr th:first-child{
+    width: 7%;
+}
+
+div.assetList #historicalAsset table thead tr th:nth-child(2){
+    width: 20%;
+}
+
+div.assetList #historicalAsset table thead tr th:nth-child(4){
+    width: 18%;
+}
+
+div.assetList .tab-content table thead tr th:first-child,
+div.assetList .tab-content table tbody tr td:first-child{
+    border-left: none;
+}
+
+div.assetList .tab-content table thead tr th:last-child,
+div.assetList .tab-content table tbody tr td:last-child{
+    border-right: none;
+}
+
+div.assetList #currentAsset table tbody tr td:nth-child(5) > span:first-child{
+    display: inline-block;
+    width: 66px;
+    margin-left: 7px;
+}
+
+div.assetList #currentAsset table tbody tr td:nth-child(5) > span:last-child{
+    display: inline-block;
+    width: 20px;
+}
+
+div.assetList #currentAsset table tbody tr td:nth-child(5) > span img{
+    margin-top: -5px;
+}
+
+div.assetList #currentAsset table tbody tr td:nth-child(6){
+    text-align: left;
+}
+
+/*div.assetList table tbody tr td:last-child{
+    text-align: right;
+    padding-right: 15px;
+}*/
+
+div.assetList #historicalAsset table thead #assetCategory img{
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+div.assetList #historicalAsset .kx-checkbox{
+    display: block;
+    height: 19px;
+    float: left;
+    margin-right: 15px;
+}
+
+div.assetList #historicalAsset table .assetTypeMenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    text-align: left;
+    list-style: none;
+    margin-top: 4px;
+    margin-left: 55px;
+    padding: 10px 24px 2px;
+    width: 228px;
+    max-height: 226px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 2px;
+    overflow: auto;
+}
+
+div.assetList #historicalAsset table .assetTypeItem{
+    /*float: left;
+    width: 48%;*/
+    margin: 0px 0px 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*div.assetList #historicalAsset table .assetTypeItem:nth-child(odd){
+    margin-right: 4%;
+}*/
+
+div.assetList #historicalAsset .assetTypeMenu .divider{
+    height: 1px;
+    margin: 11px 0;
+    overflow: hidden;
+    background-color: #E5E5E5;
+}
+
+
+div.assetList .tab-content table tbody .periodValue {
+    display: inline-block;
+    width: 52%;
+    text-align: right;
+}
+
+div.assetList .tab-content table tbody .overProtect{
+    padding: 1px 3px;
+    background: #666666;
+    border-radius: 4px;
+    font-size: 10px;
+    transform: scale(0.85);
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+div.assetList .tab-content table tbody .overDue{
+    padding: 1px 3px;
+    background: #666666;
+    border-radius: 4px;
+    font-size: 10px;
+    transform: scale(0.85);
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+div.assetList .tab-content .dataStatistic{
+    width: 100%;
+    margin-top: 18px;
+    padding-left: 10px;
+    color: #333333;
+    letter-spacing: 0;
+    position: absolute;
+    bottom: 5px;
+}
+
+div.assetList .tab-content .dataStatistic > span{
+    margin-right: 30px;
+}
+
+div.assetList .tab-content .dataStatistic .totalCount{
+    color: #485465;
+}
+
+div.assetList .tab-content .dataStatistic .dataValue{
+    margin-left: 10px ;
+    margin-right: 5px ;
+}
+
+div.assetList .tab-content .dataStatistic span img{
+    margin-top: -3px;
+}
+
+div.assetList .dataStatistic .popover-content{
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+div.assetList .dataStatistic .popover-content .calculateMethod{
+    color: #2A2A2A;
+}
+
+div.assetList div.hintMsg{
+    z-index: 1000;
+    display: none;
+    background-color: #FFF7D9;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    padding:4px 12px;
+    position: absolute;
+}
+
+div.assetList div.hintMsg >span{
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 1px;
+}

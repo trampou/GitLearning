@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>icon－huifu－win</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="2" width="10" height="10" rx="1"/>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="10" fill="white">
+            <use xlink:href="#path-1"/>
+        </mask>
+        <path d="M3,2.09544429 L3,0.998626156 L3,0.998626156 C3,0.447100159 3.4463114,0 3.99754465,0 L11.0024554,0 C11.553384,0 12,0.446311399 12,0.997544646 L12,8.00245535 C12,8.55338405 11.5444029,9 10.9976231,9 L9.94713602,9" id="path-3"/>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="9" height="9" fill="white">
+            <use xlink:href="#path-3"/>
+        </mask>
+    </defs>
+    <g id="消息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关闭状态" transform="translate(-285.000000, -53.000000)">
+            <g id="控件－pc" transform="translate(204.000000, 53.000000)">
+                <g id="huifu" transform="translate(81.000000, 0.000000)">
+                    <use id="最大化" stroke="#546576" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"/>
+                    <use id="最大化" stroke="#546576" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"/>
+                    <rect id="Rectangle-293" x="0" y="0" width="12" height="12"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

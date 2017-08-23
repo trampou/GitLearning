@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="100px" viewBox="0 0 120 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>gerenwenjian</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,0 L33.9964051,0 C35.10296,0 36,0.898855112 36,2.00492334 L36,41.9950767 C36,43.1023652 35.1101074,44 34.0002927,44 L1.99970728,44 C0.895299444,44 0,43.1002151 0,41.9977147 L0,11 L11,0 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36" height="44" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="4" y="21.0776535" width="23" height="7.92234654"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="23" height="7.92234654" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M11,0 L33.9964051,0 C35.10296,0 36,0.898855112 36,2.00492334 L36,41.9950767 C36,43.1023652 35.1101074,44 34.0002927,44 L0,44 L0,11 L11,0 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36" height="44" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="5" y="22" width="10" height="8"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="8" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <path d="M11,0 L33.9964051,0 C35.10296,0 36,0.898855112 36,2.00492334 L36,41.9950767 C36,43.1023652 35.1101074,44 34.0002927,44 L1.99970728,44 C0.895299444,44 0,43.1002151 0,41.9977147 L0,11 L11,0 Z" id="path-9"></path>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36" height="44" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <polygon id="path-11" points="51.5 0 51.5 6 44.5 3"></polygon>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7" height="6" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="0" y="0" width="46" height="6"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="46" height="6" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-15" x="4" y="0" width="39" height="6"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="39" height="6" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <ellipse id="path-17" cx="14" cy="15" rx="9" ry="9"></ellipse>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.5" y="-0.5" width="19" height="19">
+            <rect x="4.5" y="5.5" width="19" height="19" fill="white"></rect>
+            <use xlink:href="#path-17" fill="black"></use>
+        </mask>
+        <rect id="path-19" x="9" y="22" width="10" height="9" rx="2"></rect>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="9" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <rect id="path-21" x="9" y="22" width="10" height="6"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="6" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <rect id="path-23" x="9" y="22" width="10" height="3"></rect>
+        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10" height="3" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+    </defs>
+    <g id="任务分析" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.0.3-个人报表任务管理－任务详情-无数据" transform="translate(-429.000000, -383.000000)">
+            <g id="个人文件" transform="translate(429.000000, 383.000000)">
+                <g id="文件03" transform="translate(17.000000, 40.000000)">
+                    <g id="Group-17" transform="translate(18.000000, 22.000000) scale(-1, 1) translate(-18.000000, -22.000000) ">
+                        <use id="Rectangle-10" stroke="#B0BDC9" mask="url(#mask-2)" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <polyline id="Rectangle-10" stroke="#027AFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" points="11 0.5 11 11 0.5 11"></polyline>
+                    </g>
+                    <use id="Rectangle-6" stroke="#EEEEEE" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="4" y="9" width="10" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDC9" x="4" y="13" width="20" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="4" y="5" width="15" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#FFAB31" x="15" y="9" width="5" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="15" y="32" width="7" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="4" y="32.248244" width="7.09438659" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="4" y="37.248244" width="27" height="0.5"></rect>
+                </g>
+                <g id="文件04" transform="translate(38.000000, 31.000000)">
+                    <g id="Group-17" transform="translate(18.000000, 22.000000) scale(-1, 1) translate(-18.000000, -22.000000) " stroke="#B0BDC9">
+                        <use id="Rectangle-10" mask="url(#mask-6)" fill="#FFFFFF" xlink:href="#path-5"></use>
+                        <polyline id="Rectangle-10" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#EFF9FF" points="11 0.5 11 11 0.5 11"></polyline>
+                    </g>
+                    <use id="Rectangle-6" stroke="#B0BDC9" mask="url(#mask-8)" fill="#EFF9FF" xlink:href="#path-7"></use>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="5" y="9" width="10" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDC9" x="5" y="13" width="20" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="16" y="9" width="5" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#FFAB31" x="15" y="33" width="7" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="5" y="33.248244" width="7.09438659" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="17" y="29.248244" width="7.09438659" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="5" y="38.248244" width="27" height="0.5"></rect>
+                </g>
+                <g id="文件05" transform="translate(60.000000, 40.000000)">
+                    <g id="Group-17" transform="translate(18.000000, 22.000000) scale(-1, 1) translate(-18.000000, -22.000000) " stroke="#B0BDC9">
+                        <use id="Rectangle-10" mask="url(#mask-10)" fill="#FFFFFF" xlink:href="#path-9"></use>
+                        <path d="M11,0.5 L11,9.00031539 C11,10.1047107 10.1047759,11 9.00031539,11 L0.5,11" id="Rectangle-10" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" fill="#EFF9FF"></path>
+                    </g>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="6" y="7" width="10" height="0.5"></rect>
+                    <path d="M6.25,14.5 L6.25,29.5" id="Line" stroke="#EEEEEE" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="2,2"></path>
+                    <path d="M19.25,14.5 L19.25,29.5" id="Line" stroke="#EEEEEE" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="2,2"></path>
+                    <path d="M31.25,14.5 L31.25,29.5" id="Line" stroke="#EEEEEE" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="2,2"></path>
+                    <polyline id="Line" stroke="#FFC839" stroke-linecap="square" stroke-linejoin="round" points="6.5 27.5 12.8057313 23.4872619 20.5 24.5 31 16.5"></polyline>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="6" y="12" width="26" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="6" y="3" width="15" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="17" y="7" width="5" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="15" y="32" width="7" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#EEEEEE" x="24" y="32" width="8" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="5" y="32.248244" width="7.09438659" height="0.5"></rect>
+                    <rect id="Rectangle-9" fill="#B0BDCA" x="5" y="38.248244" width="27" height="0.5"></rect>
+                </g>
+                <g id="笔" transform="translate(31.000000, 89.000000)">
+                    <use id="Rectangle-14" stroke="#B0BDC9" mask="url(#mask-12)" fill="#ECF5FC" transform="translate(48.000000, 3.000000) scale(-1, 1) translate(-48.000000, -3.000000) " xlink:href="#path-11"></use>
+                    <use id="Rectangle-14" stroke="#B0BDC9" mask="url(#mask-14)" fill="#FFFFFF" xlink:href="#path-13"></use>
+                    <use id="Rectangle-14" stroke="#B0BDC9" mask="url(#mask-16)" fill="#FFFFFF" xlink:href="#path-15"></use>
+                    <rect id="Rectangle-14" fill="#EFF9FF" x="4.5" y="1" width="38" height="4.5"></rect>
+                    <rect id="Rectangle-16" fill="#B0BDC9" x="4" y="3" width="11" height="0.5"></rect>
+                    <rect id="Rectangle-16" fill="#B0BDC9" x="41" y="3" width="2" height="0.5"></rect>
+                </g>
+                <g id="灯泡" transform="translate(77.000000, 3.000000)">
+                    <ellipse id="Oval-8" stroke="#B0BDC9" stroke-width="0.5" fill="#EFF9FF" cx="14" cy="31" rx="2" ry="2"></ellipse>
+                    <g id="Oval-8">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
+                        <use stroke="#B4C0CC" mask="url(#mask-18)" stroke-width="1" xlink:href="#path-17"></use>
+                    </g>
+                    <ellipse id="Oval-8" fill="#EFF9FF" cx="14.25" cy="15.25" rx="8.25" ry="8.25"></ellipse>
+                    <use id="Rectangle-13" stroke="#B0BDC9" mask="url(#mask-20)" fill="#FFFFFF" xlink:href="#path-19"></use>
+                    <use id="Rectangle-13" stroke="#B0BDC9" mask="url(#mask-22)" fill="#FFFFFF" xlink:href="#path-21"></use>
+                    <use id="Rectangle-13" stroke="#B0BDC9" mask="url(#mask-24)" fill="#FFFFFF" xlink:href="#path-23"></use>
+                    <path d="M13.25,0.5 L13.25,3.5" id="Line" stroke="#B4C0CC" stroke-width="0.5" stroke-linecap="square"></path>
+                    <path d="M28,17 L25,17" id="Line" stroke="#B4C0CC" stroke-width="0.5" stroke-linecap="square"></path>
+                    <path d="M25.5,6 L23.1573936,7.87408514" id="Line" stroke="#B4C0CC" stroke-width="0.5" stroke-linecap="square"></path>
+                    <path d="M3,17 L0,17" id="Line" stroke="#B4C0CC" stroke-width="0.5" stroke-linecap="square"></path>
+                    <g id="Group-22" transform="translate(11.000000, 12.000000)" stroke="#B0BDC9" stroke-width="0.5" stroke-linecap="square">
+                        <path d="M5,7 L1,7" id="Line"></path>
+                        <path d="M3,3 L3,10" id="Line"></path>
+                        <polyline id="Line" points="0.5 0.5 2.89483643 2.89483643 5.5 0.5"></polyline>
+                    </g>
+                    <path d="M5,8 L2.50384912,6.33589941" id="Line" stroke="#B4C0CC" stroke-width="0.5" stroke-linecap="square"></path>
+                </g>
+                <rect id="gerenwenjian" x="0" y="0" width="120" height="100"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

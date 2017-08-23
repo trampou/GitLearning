@@ -1,0 +1,49 @@
+*{box-sizing: border-box}
+
+.wp-cityPicker,.wp-cityBox{
+    width: 100%;
+}
+
+.wp-cityPicker{
+    border: 1px solid transparent;
+    background: transparent;
+    height: 100%;
+    font-size: medium;
+}
+
+.wp-cityBox{
+    padding:5px;
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    z-index: 999;
+}
+
+.wp-cityBox > div{
+    overflow-wrap: break-word;
+}
+
+.wp-cityBox .level1-box,.wp-cityBox .level2-box{
+    width: 100%;
+    height: 100%;
+}
+
+.wp-cityBox .level1-box > span,.wp-cityBox .level2-box > span{
+    display: inline-block;
+}
+
+.wp-cityBox .level2-box{
+    display: none;
+}
+
+.wp-cityBox .level1-box .level1,.wp-cityBox .level2-box .level2{
+    cursor: pointer;
+    color:dodgerblue;
+    margin: 2px 6px;
+}
+
+.wp-cityBox .level1-box .level1:hover,.wp-cityBox .level2-box .level2:hover{
+    color: #ff6436;
+}

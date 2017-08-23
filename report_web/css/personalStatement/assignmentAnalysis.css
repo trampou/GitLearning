@@ -1,0 +1,262 @@
+*{
+    outline: none;
+}
+
+ul,li {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/*页面*/
+#assignment{
+    width:100%;
+    height:100%;
+    min-width: 820px;
+    min-height:544px;
+    position: relative;
+    overflow: hidden;
+    background:#FAFBFE;
+}
+/*内容*/
+#assContainer{
+    height:544px;
+    position:absolute;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    color:#666;
+    top:65px;
+    bottom:10px;
+    left:10px;
+    right:10px;
+}
+/*图表*/
+#chart{
+    width:100%;
+    min-width:800px;
+    height:190px;
+    margin-bottom:10px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*日期选择*/
+.timeFilter{
+    height:35px;
+    line-height: 35px;
+    padding-left: 22px;
+    border-bottom: 1px solid #eee;
+}
+.timePicker{
+    height:20px;
+}
+#chart .timePicker .timeInput{
+    width:66px;
+    height:20px;
+    border:none;
+    background: url('../../images/personalStatement/icon－shijianxiala.svg') right center no-repeat ;
+}
+#chart .line{
+    display: inline-block;
+    width: 7px;
+    height:5px;
+    margin-right:4px;
+    border-top: 1px solid #999;
+}
+/*饼图*/
+#finishedAssignment,#projectAssignment{
+    float:left;
+    height:153px;
+}
+#finishedAssignment{
+    width:41.25%;
+    /*min-width:330px;*/
+
+}
+/*柱状图*/
+#projectAssignment{
+    width:58.75%;
+    /*min-width:469px;*/
+    border-left: 1px solid #eee;
+}
+div.leftCharts{
+    float:left;
+    padding:16px 0 0 68px;
+    color:#666;
+}
+div.rightTips{
+    float:right;
+    margin-right:24px;
+    padding-top: 14px;
+}
+div.rightTips b{
+    display:inline-block;
+    width:8px;
+    height:8px;
+    margin-right: 8px;
+    background: #95DE85;
+    border-radius: 50%;
+}
+div.rightTips :nth-child(2) b{
+    background: #D8D8D8;
+}
+.assignmentBar{
+    height:20px;
+    display:inline-block;
+    border-radius: 1px;
+}
+.assignmentBar :first-child{
+    width:95px;
+    height:20px;
+    display:inline-block;
+    background: #8AE086;
+}
+.assignmentBar :nth-child(2){
+    width:95px;
+    height:20px;
+    display:inline-block;
+    background: #D8D8D8;
+    position:relative;
+    left:-4px;
+}
+/***************************************************/
+/*完成任务详情表*/
+#assignmentDetails{
+    height:323px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius: 4px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position:relative;
+}
+/*滚动条样式*/
+::-webkit-scrollbar{
+    width:5px;
+    height:80px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #AFBDC9;
+}
+ul.tableHeader{
+    width:98%;
+    height:43px;
+    position:relative;
+    /*overflow: hidden;*/
+    padding-bottom: 12px;
+}
+.tableHeader>li:first-child{
+    padding:12px 0 0 20px;
+    float:left;
+    font-size: 14px;
+}
+/*前面小竖线*/
+.tableHeader :first-child b{
+    display:inline-block;
+    padding-left: 4px;
+    padding-top:20px;
+    background-color: #00BF4D;
+    position: absolute;
+    top:13px;
+    left:10px;
+}
+.tableHeader>li:nth-child(2),.tableHeader>li:nth-child(3){
+    float: right;
+    padding-top:13px;
+    cursor:pointer;
+}
+.tableHeader>li:nth-child(3){
+    padding-right:10px;
+}
+.assignmentScreen{
+    position: relative;
+    top:-3px;
+}
+/*下拉列表*/
+.assignmentScreen ul.screenList{
+    width:254px;
+    height:279px;
+    position: absolute;
+    right:0;
+    top:43px;
+    padding:13px 0 13px 16px;
+    background: #FFF;
+    border: 1px solid #EEE;
+    color:#999;
+    display:none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 2px;
+}
+.screenList span{
+    padding-bottom:4px;
+    border-bottom: 1px solid #999;
+}
+.screenList p{
+    margin-top:7px;
+    padding-left: 20px;
+}
+.screenList i{
+    font-style: normal;
+    display:inline-block;
+    padding-right: 27px;
+    padding-bottom: 6px;
+}
+.screenList p :nth-child(2){
+    color:#546576;
+}
+button.confirm,button.clear{
+    width:60px;
+    height:30px;
+    line-height: 30px;
+    border:1px solid #999;
+    padding:0 16px;
+}
+button.confirm{
+    background: #70BF73;
+    border: 1px solid #39953E;
+    border-radius: 4px;
+    color:#fff;
+    margin-right: 10px;
+}
+.clear{
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    color:#999;
+}
+/*表格*/
+table.finishedAssignmentDetails{
+    width:97%;
+    min-width: 760px;
+    border-top: 1px solid #E1E1E1;
+    margin-left:20px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-bottom: 1px solid #E1E1E1;
+    border-top: none;
+}
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: #FAFAFA;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    height:46px;
+    line-height: 1.0;
+    vertical-align: middle;
+}
+.finishedAssignmentDetails th{
+    text-align: center;
+    font-weight: normal;
+}
+.finishedAssignmentDetails td{
+    color:#999;
+}

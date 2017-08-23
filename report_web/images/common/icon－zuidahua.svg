@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon－zuidahua</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="12" height="12" rx="1"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12" height="12" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="消息" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="状态汇总" transform="translate(-331.000000, -139.000000)">
+            <g id="控件－pc" transform="translate(304.000000, 139.000000)">
+                <g id="最大化" transform="translate(27.000000, 0.000000)">
+                    <use stroke="#546576" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-293" x="0" y="0" width="12" height="12"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

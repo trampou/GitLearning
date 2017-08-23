@@ -1,0 +1,766 @@
+/*
+作者：陈丽
+最新更新：2017/03/10
+功能：个人报表考勤首页的样式表
+*/
+
+*{
+    padding:0px;
+    margin:0px;
+}
+/*重写滚动条样式start*/
+::-webkit-scrollbar
+{
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 5px;
+    background-color: #999999;
+    -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}
+/*重写滚动条样式end*/
+/*覆盖fullCalendar样式*/
+.fc th {
+    text-align: center;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0.99px;
+    font-weight:normal;
+}
+#calendar .fc-head{
+    height:30px;
+    line-height:30px;
+    background: #F9F9F9;
+}
+.fc th{
+    border-top:1px solid #eeeeee;
+    border-bottom:1px solid #eeeeee;
+    border-left-width:0px;
+    border-right-width:0px;
+}
+.fc td{
+    border:1px solid #F7F7F7;
+    /*border-bottom:1px solid #F7F7F7;
+    border-left:1px so;
+    border-right:1px;*/
+}
+.fc-unthemed .fc-today{
+    background:transparent;
+}
+.fc-day-number{
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.16px;
+}
+.fc-day-number>span{
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 0.99px;
+    margin-left:20px;
+}
+.fc-widget-header>table:nth-of-type(1){   /*周六周日这种表头*/
+    display:none;
+}
+.fc-widget-content>.fc-scroller{
+    height:100% !important;   /*强制覆盖*/
+}
+/*覆盖fullCalendar样式*/
+html,body{
+    min-width: 820px;
+    min-height:600px;
+    width:100%;
+    height:100%;
+}
+body{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    letter-spacing: 0;
+}
+#cl_index_wrap{
+    min-width: 820px;
+    min-height:600px;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+/*头部start*/
+.navigation_block {
+    height: 55px;
+}
+#cl_index_wrap #navigation{
+    width:100%;
+    height:55px;
+    border-bottom: 1px solid #EEEEEE;
+    box-sizing:border-box;
+}
+    /*#cl_index_wrap #navigation .navigation_block_i:nth-of-type(1){
+    display:inline-block;
+    width:70px;
+    height:16px;
+    line-height:16px;
+    margin-top:18px;
+    border-right:1px solid #D8D8D8;
+    margin-left:15px;
+    color: #333333;
+    cursor:pointer;
+}
+    #cl_index_wrap #navigation .navigation_block_i:nth-of-type(2){
+        margin-top:18px;
+    margin-left:13px;
+    line-height:55px;
+    color: #B0BDC9;
+    !*cursor:pointer;*!
+}*/
+    /*公共導行兩個名字中間的那根線*/
+.navigation_block .navigation_block_i div{
+    height:16px;
+}
+/*#cl_index_wrap>header>span:nth-of-type(3),#cl_index_wrap>header>span:nth-of-type(4),#cl_index_wrap>header>span:nth-of-type(5){
+    padding:8px 5px 5px 8px ;
+   !* border:1px solid orange;*!
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+    margin-top:20px;
+    cursor:pointer;
+}
+#cl_index_wrap>header>span:nth-of-type(3){
+    margin-right:20px;
+    background:url("../../images/personalStatement/icon－guanbi.svg") no-repeat;
+}
+#cl_index_wrap>header>span:nth-of-type(4){
+    margin-right:15px;
+    background:url("../../images/icon－zuidahua.svg") no-repeat;
+}
+#cl_index_wrap>header>span:nth-of-type(5){
+    margin-right:15px;
+    background:url("../../images/icon－zuixiaohua.svg") no-repeat;
+}*/
+/*头部end*/
+/*内容区域start*/
+#cl_index_wrap>article{
+    min-width:800px;
+    position:absolute;
+    top:62px;/*55+7*/
+    bottom:0px;
+    left:0px;
+    right:0px;
+    /*background:lightcoral;*/
+}
+#cl_index_wrap>article .cl_index_content{
+   min-width:800px;
+   border: 1px solid #EEEEEE;;
+   box-sizing:border-box;
+    position:absolute;
+    top:0px;
+    left:11px;
+    right:7px;
+    bottom:12px;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne{
+   height:54px;
+   min-width:760px;
+   margin-left:20px;
+   margin-right:20px;
+   border-bottom: 1px solid #EEEEEE;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(1){
+   margin-left:5px;
+   margin-top:21px;
+   display:inline-block;
+   /*padding-right:280px;*/
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(1)>span:nth-last-child(1){
+    display:inline-block;
+    padding:10px 10px 10px 10px;
+   /* border:1px solid orange;*/
+    vertical-align: top;
+    cursor:pointer;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(1)>.cl_index_down_arrow{
+    background:url("../../images/personalStatement/icon_down.svg") no-repeat center;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2){
+   float:right;
+   margin-right:5px;
+   margin-top:21px;
+   /*background:lightgoldenrodyellow;*/
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2)>span{
+   font-size: 12px;
+   color: #999999;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2)>span:nth-of-type(2){
+   padding-right:12px;
+   border-right:1px solid #DADADA;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2)>span:nth-of-type(3) {
+   margin-left:12px;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2) .cl_index_exclamationMark{
+   padding-left:15px;
+    /*padding-right:18px;*/
+    background:url("../../images/personalStatement/icon_tishi.svg") no-repeat center;
+    cursor:pointer;
+    /*border:1px solid orange;*/
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerOne>div:nth-of-type(2)>span:nth-last-child(2){
+    padding-left:13px;
+    border-left: 1px solid #DADADA;
+    margin-left:10px;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerTwo{
+   height:40px;
+   min-width:760px;
+   margin-left:20px;
+   margin-right:20px;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerTwo>span{
+   display:inline-block;
+   height:40px;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerTwo>span:nth-of-type(1){
+   width:96px;
+   line-height:40px;
+   text-align:center;
+   color: #333333;
+   box-sizing:border-box;
+}
+#cl_index_wrap>article .cl_index_content>header>.cl_index_content_headerTwo>span:nth-of-type(2){
+   float:right;
+   margin-right:5px;
+   color: #999999;
+   line-height:40px;
+    padding-right:20px;
+    background:url("../../images/personalStatement/icon_right.svg") no-repeat  86px 9px;
+    cursor:pointer;
+}
+#cl_index_wrap>article .cl_index_content>article:nth-of-type(1){
+   min-width:760px;
+   margin-left:20px;
+   margin-right:20px;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table{
+   width:100%;
+   /*height:90px;*/
+    height:auto;
+   border:1px solid #EEEEEE;
+   color:#666666;
+   table-layout: fixed;/*表格内内容很多时固定大小*/
+   border-collapse:collapse;
+    border-right:none;
+    border-left:none;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1){
+   background: #F9F9F9;
+    border-bottom:1px solid #eeeeee;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr{
+    height:43px;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table td{
+   border-right:1px solid #EEEEEE;
+   text-align:center;
+   word-break: break-all;/*内容很多时自动换行*/
+   /*background:orange;*/
+}
+/*固定每一个单元格的大小*/
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(1),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(2),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(3),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(4),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(5),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(6),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(7),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(8),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(9),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(10){
+    width:8%;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(11),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(12){
+    width:10%;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(1),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(2),#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-of-type(9){
+    cursor:pointer;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table td:nth-last-of-type(1){
+   border-right:none;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(1):after,#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(2):after{
+   content: "";
+   display:inline-block;
+   border-left:6px solid transparent;
+   border-right:6px solid #FFFB00;
+   border-top:6px solid transparent;
+   border-bottom:6px solid #FFFB00;
+   position:absolute;
+   bottom:0px;
+   right:0px;
+    opacity:0.4;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(1){
+   position:relative;
+   background: #EE4D4D;
+    color:white;
+   border-right:none;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(2){
+   position:relative;
+   background: #EE4D4D;
+    color:white;
+   border-right:none;
+   border-left:none;
+  /* box-shadow:1px 0px 0px #eeeeee inset;*/
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(3){
+    background: #EE4D4D;
+    color:white;
+   border-right:none;
+   border-left:none;
+   /*box-shadow:1px 0px 0px #eeeeee inset;*/
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(4){
+    background: #EE4D4D;
+   border-left:none;
+    color:white;
+   /*box-shadow:1px 0px 0px #eeeeee inset;*/
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(9){
+   position:relative;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(1)>td:nth-of-type(9):after{
+   content: "";
+   display:inline-block;
+   border-left:6px solid transparent;
+   border-right:6px solid #CDD3D8;
+   border-top:6px solid transparent;
+   border-bottom:6px solid #CDD3D8;
+   position:absolute;
+   bottom:0px;
+   right:0px;
+    opacity:0.4;
+}
+#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(2)>td:nth-of-type(1),#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(2)>td:nth-of-type(2),#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(2)>td:nth-of-type(3),#cl_index_wrap>article .cl_index_content .cl_index_content_table table>tbody>tr:nth-of-type(2)>td:nth-of-type(4){
+    font-size:16px;
+    color:#333333;
+}
+#cl_index_wrap>article .cl_index_content>article:nth-of-type(2){
+   min-width:760px;
+   min-height:296px;
+   box-sizing:border-box;
+   left:20px;
+   right:20px;
+    top:225px;
+    bottom:10px;
+    position:absolute;
+   overflow:auto;
+    /*background:lightcyan;*/
+}
+#cl_index_wrap>article .cl_index_content>div{
+    position:absolute;
+    right:20px;
+    left:20px;
+    border:1px solid #eeeeee;
+    border-left:none;
+    border-right:none;
+    height:30px;
+    top:195px;
+    background: #F9F9F9;
+}
+/*日历固定的表头*/
+#cl_index_wrap>article .cl_index_content>div>table{
+    font-size: 12px;
+    width:100%;
+    color: #666666;
+    letter-spacing: 0.99px;
+    min-width:754px;
+    height:30px;
+    margin-right:6px;
+    text-align:center;
+}
+/*日历*/
+#cl_index_wrap>article .cl_index_content>article:nth-of-type(2)>div{
+    width:100%;
+    height:100%;
+}
+#cl_index_wrap>article .cl_index_content>article:nth-of-type(2) #calendar{
+   min-width:754px;
+    margin-right:6px;
+}
+#cl_index_wrap .cursorPointer{  /*日历里的迟到早退等情况有详细提示的增加这个类*/
+    cursor:pointer;
+}
+/*加班是蓝色，迟到，早退是橙色，旷工是粉色，外勤出差和外出是紫色，休假是绿色，当一天只有一种情况的时候是有margin-top的，一天有多种情况的时候就不能有margin-top*/
+#cl_index_wrap .overtime,#cl_index_wrap .late,#cl_index_wrap .before,#cl_index_wrap .non_attendance,#cl_index_wrap .business,#cl_index_wrap .vacation,#cl_index_wrap .none,#cl_index_wrap .overtimeJustOne,#cl_index_wrap .lateJustOne,#cl_index_wrap .beforeJustOne,#cl_index_wrap .non_attendanceJustOne,#cl_index_wrap .businessJustOne,#cl_index_wrap .vacationJustOne,#cl_index_wrap .noneJustOne{
+    background:white;
+    border:none;
+    font-size: 12px;
+    letter-spacing: 0.99px;
+    text-align:center;
+}
+#cl_index_wrap .overtimeJustOne{   /*加班*/
+    color: #76B6F1;
+    margin-top:20%;
+}
+#cl_index_wrap .overtime{
+    color:#76B6F1;
+}
+#cl_index_wrap .lateJustOne,#cl_index_wrap .beforeJustOne{  /*迟到，早退*/
+    color: #F6A623;
+    margin-top:20%;
+}
+#cl_index_wrap .late,#cl_index_wrap .before{
+    color: #F6A623;
+}
+#cl_index_wrap .non_attendanceJustOne{  /*旷工*/
+    color:#FD9390;
+    margin-top:20%;
+}
+#cl_index_wrap .non_attendance{
+    color:#FD9390;
+}
+#cl_index_wrap .businessJustOne{   /*外勤，出差，外出*/
+    color: #C6ADD5;
+    margin-top:20%;
+}
+#cl_index_wrap .business{
+    color:#C6ADD5;
+}
+#cl_index_wrap .vacationJustOne{   /*休假*/
+    color: #92E389;
+    margin-top:20%;
+}
+#cl_index_wrap .vacation{
+    color: #92E389;
+}
+/*所有标志前面那个点通用*/
+#cl_index_wrap .late .fc-content .fc-title:before,#cl_index_wrap .before .fc-content .fc-title:before,#cl_index_wrap .non_attendance .fc-content .fc-title:before,#cl_index_wrap .business .fc-content .fc-title:before,#cl_index_wrap .vacation .fc-content .fc-title:before,#cl_index_wrap .lateJustOne .fc-content .fc-title:before,#cl_index_wrap .beforeJustOne .fc-content .fc-title:before,#cl_index_wrap .non_attendanceJustOne .fc-content .fc-title:before,#cl_index_wrap .businessJustOne .fc-content .fc-title:before,#cl_index_wrap .vacationJustOne .fc-content .fc-title:before,#cl_index_wrap .overtimeJustOne .fc-content .fc-title:before,#cl_index_wrap .overtime .fc-content .fc-title:before{
+    content:'';
+    display:inline-block;
+    border-radius:4px;
+    margin-right:6px;
+}
+/*加班前面那个点*/
+#cl_index_wrap .overtimeJustOne .fc-content .fc-title:before,#cl_index_wrap .overtime .fc-content .fc-title:before{
+    border:4px solid #76B6F1;
+}
+/*迟到，早退前面那个点*/
+#cl_index_wrap .late .fc-content .fc-title:before,#cl_index_wrap .before .fc-content .fc-title:before,#cl_index_wrap .lateJustOne .fc-content .fc-title:before,#cl_index_wrap .beforeJustOne .fc-content .fc-title:before{
+    border:4px solid #f6a523;
+}
+/*旷工前面那个点*/
+#cl_index_wrap .non_attendance .fc-content .fc-title:before,#cl_index_wrap .non_attendanceJustOne .fc-content .fc-title:before{
+    border:4px solid #FD9390;
+}
+/*外勤，出差，外出前面那个点*/
+#cl_index_wrap .business .fc-content .fc-title:before,#cl_index_wrap .businessJustOne .fc-content .fc-title:before{
+    border:4px solid #C6ADD5;
+}
+/*休假前面那个点*/
+#cl_index_wrap .vacationJustOne .fc-content .fc-title:before,#cl_index_wrap .vacation .fc-content .fc-title:before{
+    border:4px solid #85E07A;
+}
+/*排班制的日历*/
+#cl_index_wrap #calendarMask{ /*用于阻止日历上面的点击事件*/
+    width:292px;
+    height:180px;
+    position:absolute;
+    top:164px;
+    z-index:5000;
+}
+#cl_index_wrap #myCalendar{
+    width:292px;
+    height:240px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    position:absolute;
+    top:110px;
+    z-index:3000;
+}
+#cl_index_wrap #myCalendar:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    transform:rotate(45deg);
+    margin-top:-5px;
+    border:1px solid #eeeeee;
+    border-bottom:none;
+    border-right:none;
+    left:172px;
+    background:white;
+}
+#cl_index_wrap #myCalendar>header{
+    height:40px;
+    font-size: 12px;
+    color: #666666;
+    line-height:40px;
+}
+#cl_index_wrap #myCalendar>header>table{
+    width:100%;
+    text-align: center;
+}
+#cl_index_wrap #myCalendar>header .first:before,#cl_index_wrap #myCalendar>header .second:before,#cl_index_wrap #myCalendar>header .third:before,#cl_index_wrap #myCalendar>header .fourth:before,#cl_index_wrap #myCalendar>header .fifth:before{
+    content:'';
+    border-radius:5.5px;
+    display:inline-block;
+    margin-right:5px;
+}
+#cl_index_wrap #myCalendar>header .first:before{  /*班次A前面的点*/
+    border:5.5px solid #76B6F1;
+    /*margin-left:9px;*/
+}
+#cl_index_wrap #myCalendar>header .second:before{  /*班次B前面的点*/
+    border:5.5px solid #8BE287;
+    /*margin-left:6px;*/
+}
+#cl_index_wrap #myCalendar>header .third:before{   /*班次C前面的点*/
+    border:5.5px solid #FFBC72;
+   /* margin-left:6px;*/
+}
+#cl_index_wrap #myCalendar>header .fourth:before{   /*班次D前面的点*/
+    border:5.5px solid #FD9390;;
+    /*margin-left:6px;*/
+}
+#cl_index_wrap #myCalendar>header .fifth:before{   /*班次E前面的点*/
+    border:5.5px solid #C6ADD5;
+    /*margin-left:6px;*/
+}
+#cl_index_wrap #myCalendar #datetimepicker{
+   position:absolute;
+    top:30px;
+    bottom:20px;
+    left:14px;
+    right:14px;
+}
+/*覆盖bootstrap的样式*/
+#cl_index_wrap #myCalendar .datetimepicker-days .table-condensed>thead>tr:nth-of-type(1){
+    display:none;
+}
+#cl_index_wrap .datetimepicker th{
+    font-size: 10px;
+    color: #ADAFB2;
+    font-weight:normal;
+    border-radius:0px;
+}
+#cl_index_wrap .datetimepicker-days .table-condensed > thead > tr > th{  /*独独控制表头的单元格，但这个宽度也决定了下面内容的宽度为38，而不是设定的24*/
+    width:38px;
+    height:24px;
+}
+#cl_index_wrap .datetimepicker-days tbody td{  /*独独控制tbody区域的单元格,不控制表头的单元格*/
+    font-family:Arial;
+    font-size: 14px;
+    color: #354052;
+    border-radius:0px;
+    width:24px;
+    height:24px;
+    line-height:24px;/*固定内容区域行高为24px的话，背景剪裁为内容区域不包括padding区域的时候就不会因为内容不够24而导致背景裁剪区域不够24px高了。*/
+    background:transparent;
+    background-clip:content-box;
+    box-sizing:content-box;/*用padding配合background-clip实现内容单元格之间的距离*/
+    padding:3px 0px 3px 0px;
+    cursor:not-allowed;
+}
+#cl_index_wrap .datetimepicker-days tbody td.old,#cl_index_wrap .datetimepicker-days tbody td.new{  /*过去月份的时间和未来月份的时间*/
+    color: #ADAFB2;
+}
+
+#cl_index_wrap .datetimepicker-inline {
+    width:100%;
+    height:100%;
+}
+#cl_index_wrap .datetimepicker {
+    padding:0px;
+}
+#cl_index_wrap .datetimepicker table tr td .active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active{
+    background:white;
+    text-shadow:none;
+}
+#cl_index_wrap .datetimepicker-days .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th{ /*表头*/
+    padding:0px;
+    cursor:not-allowed;
+}.table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {  /*内容的单元格都能控制到令其padding为0*/
+    padding:0px;
+}
+/*班次A*/
+#cl_index_wrap .datetimepicker-days tbody .aStart,#cl_index_wrap .datetimepicker-days tbody .aEnd{
+    color:white;
+    background:url("../../images/personalStatement/workFrequencyA.svg") no-repeat center #cde3f8;
+    background-clip:content-box;
+}
+#cl_index_wrap .datetimepicker-days tbody .aArea{
+    background:#cde3f8;
+    background-clip:content-box;
+}
+/*班次B*/
+#cl_index_wrap .datetimepicker-days tbody .bStart,#cl_index_wrap .datetimepicker-days tbody .bEnd{
+    color:white;
+    background:url("../../images/personalStatement/workFrequencyB.svg") no-repeat center #CCF4CA;
+    background-clip:content-box;
+}
+#cl_index_wrap .datetimepicker-days tbody .bArea{
+    background:#CCF4CA;
+    background-clip:content-box;
+}
+/*班次C*/
+#cl_index_wrap .datetimepicker-days tbody .cStart,#cl_index_wrap .datetimepicker-days tbody .cEnd{
+    color:white;
+    background:url("../../images/personalStatement/workFrequencyC.svg") no-repeat center #FEE6CC;
+    background-clip:content-box;
+}
+#cl_index_wrap .datetimepicker-days tbody .cArea{
+    background:#FEE6CC;
+    background-clip:content-box;
+}
+/*班次D*/
+#cl_index_wrap .datetimepicker-days tbody .dStart,#cl_index_wrap .datetimepicker-days tbody .dEnd{
+    color:white;
+    background:url("../../images/personalStatement/workFrequencyD.svg") no-repeat center #f1d4d3;
+    background-clip:content-box;
+}
+#cl_index_wrap .datetimepicker-days tbody .dArea{
+    background:#f1d4d3;
+    background-clip:content-box;
+}
+/*班次E*/
+#cl_index_wrap .datetimepicker-days tbody .eStart,#cl_index_wrap .datetimepicker-days tbody .eEnd{
+    color:white;
+    background:url("../../images/personalStatement/workFrequencyE.svg") no-repeat center #eee0f7;
+    background-clip:content-box;
+}
+#cl_index_wrap .datetimepicker-days tbody .eArea{
+    background:#eee0f7;
+    background-clip:content-box;
+}
+/*开始时间的阴影*/
+#cl_index_wrap .datetimepicker-days tbody .aStart,#cl_index_wrap .datetimepicker-days tbody .bStart,#cl_index_wrap .datetimepicker-days tbody .cStart,#cl_index_wrap .datetimepicker-days tbody .dStart,#cl_index_wrap .datetimepicker-days tbody .eStart{
+    border-radius: 52px 0px 0px 35px;
+    box-shadow: 6px -2px 2px white inset;
+}
+#cl_index_wrap .datetimepicker-days tbody .aEnd,#cl_index_wrap .datetimepicker-days tbody .bEnd,#cl_index_wrap .datetimepicker-days tbody .cEnd,#cl_index_wrap .datetimepicker-days tbody .dEnd,#cl_index_wrap .datetimepicker-days tbody .eEnd{
+    border-radius: 0px 16px 19px 0px;
+    box-shadow: -6px 2px 2px white inset;
+}
+
+/*可选月份提示层*/
+.cl_cmt_wrap{
+    display:none;
+    position:absolute;
+    top:0px;
+    max-width:100px;
+    max-height:154px;
+    z-index:33333;
+    background: #FAFAFA;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+.cl_chooseMonthTip{
+    height:130px;
+    width:94px;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0px;
+}
+.cl_chooseMonthTip p{
+    margin:0px;/*bootstrap对p设置了，覆盖掉*/
+    width:94px;
+    height:26px;
+    line-height:26px;
+    padding:0px 12px 0px 12px;
+}
+.cl_chooseMonthTip p:nth-of-type(1){
+    margin-top:10px;
+}
+.cl_chooseMonthTip p:nth-last-child(1){
+    margin-bottom:12px;
+}
+.cl_chooseMonthTip .cl_cm_default{
+    background: #E1E1E1;
+}
+/*通用米黄色提示层*/
+#cl_goldenrodyellow,#cl_calendar_goldenrodyellow{
+    padding:9px 15px;
+    background:#FFF7D9;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    position:absolute;
+    z-index:99999;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 1px;
+}
+#cl_goldenrodyellow span,#cl_calendar_goldenrodyellow span{
+    display:block;
+}
+/*打卡数据提示层*/
+#clockDataLayer{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 2px;
+    width:120px;
+    position:absolute;
+    z-index: 99999;
+}
+#clockDataLayer:before{
+    content:"";
+    float: right;
+    margin-right: 6px;
+    vertical-align: top;
+    margin-top: -6px;
+    width:12px;
+    height:12px;
+    transform: rotate(45deg);
+    background:white;
+    border: 1px solid #e1e1e1;
+    border-bottom: none;
+    border-right: none;
+}
+#clockDataLayer span{
+    width:50px;
+    height:20px;
+    text-align:center;
+    font-family: Arial;
+    font-size: 14px;
+    color: #999999;
+    display:inline-block;
+}
+#clockDataLayer span:nth-of-type(1),#clockDataLayer span:nth-of-type(1){
+    margin-top:10px;
+}
+#clockDataLayer span:nth-last-of-type(1){
+    margin-bottom:10px;
+}
+/*#clockDataLayer .error{
+    color: #EE4D4D;
+}*/
+#clockDataLayer .late,#clockDataLayer .before{  /*迟到，早退*/
+    color: #F6A623;
+}
+#clockDataLayer .overtime{  /*加班*/
+    color: #76B6F1;
+}
+#clockDataLayer .non_attendance{  /*旷工*/
+    color: #FD9390;
+}
+#clockDataLayer .out{  /*外勤，出差，外出*/
+    color: #C6ADD5;
+}
+#clockDataLayer .vacation{  /*休假*/
+    color: #92E389;
+}
+

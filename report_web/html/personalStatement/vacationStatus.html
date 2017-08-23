@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人报表-剩余假期</title>
+    <link rel="stylesheet" href="../../css/lib/layer.css"/>
+    <link rel="stylesheet" href="../../css/common/public_assembly.css"/>
+    <link rel="stylesheet" href="../../css/personalStatement/vacationStatus.css"/>
+</head>
+<body>
+<div id="vacationStatus_wrap">
+    <header id="navigation">
+        <!--<span>个人报表</span>
+        <span>考勤分析</span>
+        <span>带薪假期详情</span>
+        <span></span>
+        <span></span>
+        <span></span>-->
+       <!-- <p class="window_operation">
+            &lt;!&ndash;<span class="minpage winnodrag"></span>&ndash;&gt;
+            &lt;!&ndash;<span class="max winnodrag"></span>&ndash;&gt;
+            &lt;!&ndash;<span class="closepage winnodrag"></span>&ndash;&gt;
+        </p>-->
+    </header>
+    <article class="vacationTable">
+        <header>
+            <span class="watching">剩余假期总览</span>
+            <span >假期使用情况查询</span>
+        </header>
+        <div>
+           <table class="remainderStatus">
+               <!--<tr>
+                  <td>带薪假期分类</td>
+                  <td>历史剩余</td>
+                  <td>当年假期</td>
+                  <td>当年已休</td>
+                  <td>剩余假期</td>
+              </tr>
+               <tr>
+                   <td>年假</td>
+                   <td>3</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <td>调休假</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>探亲假</td>
+                   <td>5</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>姨妈假</td>
+                   <td>3</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <td>测试一下</td>
+                   <td>3</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <td>测试一下</td>
+                   <td>3</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>6</td>
+               </tr>
+               <tr>
+                   <td>调休假</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>探亲假</td>
+                   <td>5</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>调休假</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>探亲假</td>
+                   <td>5</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>调休假</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>探亲假</td>
+                   <td>5</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>调休假</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+                   <td>3</td>
+               </tr>
+               <tr>
+                   <td>探亲假</td>
+                   <td>5</td>
+                   <td>5</td>
+                   <td>2</td>
+                   <td>8</td>
+               </tr>
+               <tr>
+                   <td>合计</td>
+                   <td>14</td>
+                   <td>18</td>
+                   <td>9</td>
+                   <td>23</td>
+               </tr>-->
+          </table>
+            <div style="display:none;">
+                <div class="titleMark">
+                        <table>
+                            <tr>
+                                <td>序号</td>
+                                <td>请假事由</td>
+                                <td>请假开始时间</td>
+                                <td>请假结束时间</td>
+                                <td>请假时长</td>
+                                <td>带薪假
+                                    <span></span></td>
+                                <td>申请时间</td>
+                                <td>审批时间</td>
+                            </tr>
+                        </table>
+                </div>
+                    <div class="useTableMark">
+                        <table class="useStatus" >
+
+                            <tbody>
+                            <!--<tr>
+                                <td>序号</td>
+                                <td>请假事由</td>
+                                <td>请假开始时间</td>
+                                <td>请假结束时间</td>
+                                <td>请假时长</td>
+                                <td>带薪假期分类</td>
+                                <td>申请时间</td>
+                                <td>审批时间</td>
+                            </tr>-->
+                            </tbody>
+                            <!--<tr>
+                               <td rowspan="2">1</td>
+                               <td rowspan="2">回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td rowspan="2">1天</td>
+                               <td rowspan="2">年假</td>
+                               <td rowspan="2">2016-01-10</td>
+                               <td rowspan="2">审批中</td>
+                           </tr>
+                           <tr>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>
+                           <tr>
+                               <td>1</td>
+                               <td>回家探亲</td>
+                               <td>2016-12-20 09:00</td>
+                               <td>2016-02-15 09:00</td>
+                               <td>1天</td>
+                               <td>年假</td>
+                               <td>2016-01-10</td>
+                               <td>审批中</td>
+                           </tr>-->
+                        </table>
+                    </div>
+
+                <section>
+                    <span><!--合计请假时常--></span>
+                    <span><!--14天--></span>
+                </section>
+
+            </div>
+        </div>
+    </article>
+    <!--通用的浮层提示-->
+    <p class="commonTipLayer"></p>
+    <!--假期分类筛选-->
+    <p class="filterSelect"></p>
+</div>
+</body>
+<script src="../../js/lib/require.min.js" data-main="../../js/personalStatement/attendanceAnalysis/vacationStatus_main.js"></script>
+</html>
+<!--
+作者：陈丽
+最新更新：2017/03/10
+功能：考勤里面带薪假期页面
+-->

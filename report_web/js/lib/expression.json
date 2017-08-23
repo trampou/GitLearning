@@ -1,0 +1,292 @@
+{
+	"p1": {
+		"type":0,
+		"image":"../../images/expression/p1/1_weixiao.svg",
+		"info":[
+		[
+			{
+				"name": "愉快",
+				"url": "../../images/expression/p1/1_weixiao.svg"
+			}, {
+				"name": "开心",
+				"url": "../../images/expression/p1/2_daxiao.svg"
+			}, {
+				"name": "色",
+				"url": "../../images/expression/p1/3_xin.svg"
+			}, {
+				"name": "呆住",
+				"url": "../../images/expression/p1/4_daizhu.svg"
+			}, {
+				"name": "酷",
+				"url": "../../images/expression/p1/5_ku.svg"
+			}, {
+				"name": "流泪",
+				"url": "../../images/expression/p1/6_daku.svg"
+			}, {
+				"name": "困",
+				"url": "../../images/expression/p1/7_sleep.svg"
+			}, {
+				"name": "大笑",
+				"url": "../../images/expression/p1/8_xiaoku.svg"
+			}, {
+				"name": "冷汗",
+				"url": "../../images/expression/p1/9_lenghan.svg"
+			}, {
+				"name": "调皮",
+				"url": "../../images/expression/p1/10_tiaopi.svg"
+			}, {
+				"name": "亲亲",
+				"url": "../../images/expression/p1/10_tiaopi.svg"
+			},{
+				"name": "流汗",
+				"url": "../../images/expression/p1/12_liuhan.svg"
+			}, {
+				"name": "发怒",
+				"url": "../../images/expression/p1/13_fanu.svg"
+			}, {
+				"name": "抓狂",
+				"url": "../../images/expression/p1/14_jiong.svg"
+			}, {
+				"name": "求红包",
+				"url": "../../images/expression/p1/33_emoticon_redpacket.svg"
+			}, {
+				"name": "招财猫",
+				"url": "../../images/expression/p1/34_emoticon_cat.svg"
+			}, {
+				"name": "谢谢老板",
+				"url": "../../images/expression/p1/56_emoticon_thanks.svg"
+			}, {
+				"name": "求放假",
+				"url": "../../images/expression/p1/39_emoticon_holiday.svg"
+			}, {
+				"name": "早",
+				"url": "../../images/expression/p1/40_emoticon_morning.svg"
+			}, {
+				"name": "强",
+				"url": "../../images/expression/p1/15_zan.svg"
+			}, {
+				"name": "鼓掌",
+				"url": "../../images/expression/p1/16_guzhang.svg"
+			}, {
+				"name": "OK",
+				"url": "../../images/expression/p1/17_ok.svg"
+			}, {
+				"name": "胜利",
+				"url": "../../images/expression/p1/18_ye.svg"
+			}, {
+				"name": "祈祷",
+				"url": "../../images/expression/p1/19_qidao.svg"
+			}, {
+				"name": "力量",
+				"url": "../../images/expression/p1/20_nuli.svg"
+			}, {
+				"name": "NO",
+				"url": "../../images/expression/p1/72_emoticon_no.svg"
+			}, {
+				"name": "拜托",
+				"url": "../../images/expression/p1/73_emoticon_hock.svg"
+			}, {
+				"name": "心碎",
+				"url": "../../images/expression/p1/21_xinsui.svg"
+			}, {
+				"name": "晚安",
+				"url": "../../images/expression/p1/22_wanan.svg"
+			}, {
+				"name": "喝彩",
+				"url": "../../images/expression/p1/23_sahua.svg"
+			},  {
+				"name": "咖啡",
+				"url": "../../images/expression/p1/24_coffe.svg"
+			},{
+				"name": "蛋糕",
+				"url": "../../images/expression/p1/25_dangao.svg"
+			}, {
+				"name": "玫瑰",
+				"url": "../../images/expression/p1/26_xianhua.svg"
+			}, {
+				"name": "礼物",
+				"url": "../../images/expression/p1/27_liwu.svg"
+			}, {
+				"name": "气球",
+				"url": "../../images/expression/p1/28_qiqiu.svg"
+			}
+		],
+		[
+			{
+				"name": "吃饭啦",
+				"url": "../../images/expression/p1/37_emoticon_food.svg"
+			}, {
+				"name": "喝水",
+				"url": "../../images/expression/p1/41_emoticon_drink.svg"
+			}, {
+				"name": "吃什么",
+				"url": "../../images/expression/p1/48_emoticon_eat.svg"
+			}, {
+				"name": "吐舌",
+				"url": "../../images/expression/p1/68_emoticon_spittongue.svg"
+			}, {
+				"name": "耶",
+				"url": "../../images/expression/p1/31_emoticon_happy.svg"
+			}, {
+				"name": "呵呵哒",
+				"url": "../../images/expression/p1/60_emoticon_grin.svg"
+			}, {
+				"name": "机智如我",
+				"url": "../../images/expression/p1/58_emoticon_witty.svg"
+			}, {
+				"name": "遵命",
+				"url": "../../images/expression/p1/63_emoticon_yessir.svg"
+			}, {
+				"name": "谢谢",
+				"url": "../../images/expression/p1/64_emoticon_floret.svg"
+			}, {
+				"name": "好的",
+				"url": "../../images/expression/p1/65_emoticon_ok.svg"
+			}, {
+				"name": "原来是你",
+				"url": "../../images/expression/p1/70_emoticon_aha.svg"
+			}, {
+				"name": "出来",
+				"url": "../../images/expression/p1/71_emoticon_hock.svg"
+			}, {
+				"name": "棒",
+				"url": "../../images/expression/p1/43_emoticon_good.svg"
+			}, {
+				"name": "完美",
+				"url": "../../images/expression/p1/49_emoticon_perfect.svg"
+			}, {
+				"name": "牛",
+				"url": "../../images/expression/p1/50_emoticon_niubilityhaha.svg"
+			}, {
+				"name": "成功",
+				"url": "../../images/expression/p1/55_emoticon_success.svg"
+			}, {
+				"name": "欢迎",
+				"url": "../../images/expression/p1/46_emoticon_welcome.svg"
+			}, {
+				"name": "开会",
+				"url": "../../images/expression/p1/42_emoticon_meeting.svg"
+			}, {
+				"name": "散会",
+				"url": "../../images/expression/p1/47_emoticon_theendthanks.svg"
+			}, {
+				"name": "举手",
+				"url": "../../images/expression/p1/59_emoticon_raise.svg"
+			}, {
+				"name": "马上",
+				"url": "../../images/expression/p1/51.svg"
+			}, {
+				"name": "等一下",
+				"url": "../../images/expression/p1/54_emoticon_waitaminute.svg"
+			}, {
+				"name": "么么哒",
+				"url": "../../images/expression/p1/38_emoticon_kiss.svg"
+			}, {
+				"name": "喜欢你",
+				"url": "../../images/expression/p1/57_emoticon_love.svg"
+			}, {
+				"name": "好美啊",
+				"url": "../../images/expression/p1/52_emoticon_beautiful.svg"
+			}, {
+				"name": "好帅啊",
+				"url": "../../images/expression/p1/53_emoticon_handsome.svg"
+			}, {
+				"name": "约吗",
+				"url": "../../images/expression/p1/66_emoticon_grin2.svg"
+			}, {
+				"name": "疑问",
+				"url": "../../images/expression/p1/35_emoticon_doubt.svg"
+			}, {
+				"name": "摊手",
+				"url": "../../images/expression/p1/36_emoticon_empty.svg"
+			}, {
+				"name": "无聊",
+				"url": "../../images/expression/p1/67_emoticon_boring.svg"
+			}, {
+				"name": "累死了",
+				"url": "../../images/expression/p1/61_emoticon_tired.svg"
+			}, {
+				"name": "嘘",
+				"url": "../../images/expression/p1/62_emoticon_hush.svg"
+			}, {
+				"name": "委屈",
+				"url": "../../images/expression/p1/69_emoticon_grievance.svg"
+			}, {
+				"name": "落泪",
+				"url": "../../images/expression/p1/32_emoticon_tears.svg"
+			}, {
+				"name": "好伤心",
+				"url": "../../images/expression/p1/44_emoticon_sad.svg"
+			}
+		],[
+			{
+				"name": "污",
+				"url": "../../images/expression/p1/45_emoticon_dirty.svg"
+			}, {
+				"name": "断网了",
+				"url": "../../images/expression/p1/74_emoticon_hock.svg"
+			}, {
+				"name": "周报",
+				"url": "../../images/expression/p1/29_zhoubao.svg"
+			}, {
+				"name": "日报",
+				"url": "../../images/expression/p1/30_ribao.svg"
+			}
+		]
+	]
+	},
+
+	"p2": {
+		"type":1,
+		"image":"../../images/expression/p2/miaomiao.svg",
+		"info":[[
+			{
+				"name": "棒极~",
+				"url": "../../images/expression/p2/01_bangji.svg"
+			}, {
+				"name": "揍性",
+				"url": "../../images/expression/p2/02_zouxing.svg"
+			}, {
+				"name": "乐出翔",
+				"url": "../../images/expression/p2/03_lechuxiang.svg"
+			}, {
+				"name": "不美丽",
+				"url": "../../images/expression/p2/04_bumeili.svg"
+			}, {
+				"name": "亲亲~",
+				"url": "../../images/expression/p2/05_qinqin.svg"
+			}, {
+				"name": "穷死求钱",
+				"url": "../../images/expression/p2/06_qiongsi.svg"
+			}, {
+				"name": "并不是",
+				"url": "../../images/expression/p2/07_bingbushi.svg"
+			}, {
+				"name": "老司机",
+				"url": "../../images/expression/p2/08laosiji.svg"
+			}, {
+				"name": "开会啦",
+				"url": "../../images/expression/p2/09kaihui.svg"
+			}, {
+				"name": "刷卡",
+				"url": "../../images/expression/p2/shuaka.svg"
+			}, {
+				"name": "宝宝苦啊",
+				"url": "../../images/expression/p2/baobaoku.svg"
+			}, {
+				"name": "犯花痴",
+				"url": "../../images/expression/p2/12fanhuachi.svg"
+			}
+		],[
+			{
+				"name": "你丑你先说",
+				"url": "../../images/expression/p2/nichounixianshuo.svg"
+			}, {
+				"name": "你这么好看说什么都对",
+				"url": "../../images/expression/p2/shuoshadou.svg"
+			}
+		]
+	]
+	}
+	
+}

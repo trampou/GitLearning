@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考勤分析</title>
+    <link rel="stylesheet" href="../../css/lib/fullcalendar.css"/>
+    <link rel="stylesheet" href="../../css/lib/layer.css"/>
+    <link rel="stylesheet" href="../../css/lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/lib/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="../../css/common/public_assembly.css"/>
+    <link rel="stylesheet" href="../../css/personalStatement/attendanceAnalysis.css"/>
+</head>
+<body>
+<div id="cl_index_wrap">
+    <header id="navigation">
+        <!--<span>个人报表</span>
+        <span>考勤分析</span>
+        <span></span>
+        <span></span>
+        <span></span>-->
+       <!-- <p class="window_operation">
+            &lt;!&ndash;<span class="minpage winnodrag"></span>&ndash;&gt;
+            &lt;!&ndash;<span class="max winnodrag"></span>&ndash;&gt;
+            &lt;!&ndash;<span class="closepage winnodrag"></span>&ndash;&gt;
+        </p>-->
+    </header>
+    <article >
+        <div class="cl_index_content">
+            <header>
+                <div class="cl_index_content_headerOne">
+                    <div>
+                        <!--<span>2016年12月</span>-->
+                        <!--<span class="cl_index_down_arrow"></span>-->
+                    </div>
+                    <div>
+                        <!--<span>所属考勤组名称：</span>-->
+                        <!--<span>仓库组；考勤组1</span>-->
+                        <!--<span>类型：</span>-->
+                        <!--<span>固定班制；</span>-->
+                        <!--<span class="cl_index_exclamationMark"></span>-->
+                        <!--<span>排版制</span>-->
+                        <!--<span class="cl_index_exclamationMark"></span>-->
+                        <!--<span>勤组负责人：</span>-->
+                        <!--<span>六六；六六六</span>-->
+                    </div>
+                </div>
+                <div class="cl_index_content_headerTwo">
+                    <span>考勤统计表</span>
+                    <span>带薪假期详情</span>
+                </div>
+            </header>
+            <article class="cl_index_content_table">
+                <table>
+                    <thead></thead>
+                    <tbody>
+                       <tr>
+                           <td id="late">迟到</td>
+                           <td id="before">早退</td>
+                           <td>旷工</td>
+                           <td>漏打卡</td>
+                           <td>外勤</td>
+                           <td>外出</td>
+                           <td>出差</td>
+                           <td>加班</td>
+                           <td id="vacation">休假</td>
+                           <td>应出勤</td>
+                           <td>实际出勤</td>
+                           <td>工作时长</td>
+                       </tr>
+                        <tr>
+                            <!--<td>111次</td>
+                            <td>111次</td>
+                            <td>0天</td>
+                            <td>111次</td>
+                            <td>111次</td>
+                            <td>111次</td>
+                            <td>0次</td>
+                            <td>111</td>
+                            <td>111天</td>
+                            <td>222天</td>
+                            <td>202天</td>
+                            <td>160h</td>-->
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <div>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>周日</td>
+                        <td>周一</td>
+                        <td>周二</td>
+                        <td>周三</td>
+                        <td>周四</td>
+                        <td>周五</td>
+                        <td>周六</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <article class="cl_index_content_calendar">
+                <div>
+                    <div id="calendar"></div>
+                </div>
+            </article>
+        </div>
+    </article>
+   <!-- <p class="tipOne">
+    测试一下
+    </p>  &lt;!&ndash;只有一排的&ndash;&gt;
+    <div class="tipTwo"> &lt;!&ndash;带薪假期等有两排的&ndash;&gt;
+        测试一下
+    </div>
+    <div class="tipThree"> &lt;!&ndash;入职至今的下拉框&ndash;&gt;
+        测试一下
+    </div>
+    <table>   &lt;!&ndash;迟到的小表格&ndash;&gt;
+
+    </table>-->
+    <div id="controlCalendarShow" style="display:none;">  <!--专门用于控制日历的消失-->
+        <div id="myCalendar" >   <!--排班制的日历-->  <!--style="display:none;"-->
+            <header>
+                <table>
+                    <tr>
+                        <!--<td class="first">班次A</td>
+                        <td class="second">班次B</td>
+                        <td class="third">班次C</td>
+                        <td class="fourth">班次D</td>
+                        <td class="fifth">班次E</td>-->
+                    </tr>
+                </table>
+                <!--<span class="first">班次A</span>
+                <span class="second">班次B</span>
+                <span class="third">班次C</span>
+                <span class="fourth">班次D</span>
+                <span class="fifth">班次E</span>-->
+            </header>
+            <div id="datetimepicker"></div>
+        </div>
+        <div id="calendarMask"></div><!--用于放在排班制日历上遮挡住，就不会有日历的点击事件了-->
+        <!--专用的米黄色背景提示层-->
+        <p id="cl_calendar_goldenrodyellow" style="display:none;"></p> <!--放在这里就能控制消失了。-->
+    </div>
+</div>
+<!--可选月份提示层-->
+<div class="cl_cmt_wrap">
+    <div class="cl_chooseMonthTip">
+        <!--<p class="cl_cm_default">2013年7月</p>
+        <p>2013年6月</p>
+        <p>2013年5月</p>
+        <p>2013年4月</p>
+        <p>2013年3月</p>
+        <p>2013年2月</p>
+        <p>2013年1月</p>-->
+    </div>
+</div>
+<!--通用的米黄色背景提示层-->
+<p id="cl_goldenrodyellow" style="display:none;"></p>
+<!--通用的打卡时间段提示层-->
+<p id="clockDataLayer" style="display:none;"></p>
+<!--添加一个隐藏元素放所有排班制的时间段-->
+<div id="dataContainer" style="display:none;"></div>
+</body>
+<script src="../../js/lib/require.min.js" data-main="../../js/personalStatement/attendanceAnalysis/attendanceAnalysis_main.js"></script>
+</html>
+<!--
+作者：陈丽
+最新更新：2017/03/10
+功能：考勤首页页面
+-->

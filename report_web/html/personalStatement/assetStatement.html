@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../../css/lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/lib/layer.css" />
+    <link rel="stylesheet" href="../../css/common/public_assembly.css"> <!--头部导航条样式-->
+    <link rel="stylesheet" href="../../css/personalStatement/assetStatement.css"/>
+    <title>个人报表-资产</title>
+    <script id="currentAssetList" type="text/html">
+        {{each data as value i}}
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{value.assetNo}}</td>
+            <td><span>{{value.assetName}}</span></td>
+            <td>{{value.receiveTime}}</td>
+            <td><span>{{value.expectReturnTime}}</span>
+                {{if value.isOverDue==true}}
+                <span class="isOverDue">
+                    <img src="../../images/personalStatement/icon_jinggao.svg">
+                </span>
+                {{else}}
+                <span></span>
+                {{/if}}
+            </td>
+            <td>
+                <span class="periodValue">{{value.liveTime}}</span>
+                {{if value.isLive==1}}
+                    <span class="overDue">已过期</span>
+                {{else if value.isRepair==1}}
+                <span class="overProtect">已过保</span>
+                {{/if}}
+            </td>
+            <td>{{value.purchaseTime}}</td>
+            <td>{{value.valWorth}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script id="historicalAssetList" type="text/html">
+        {{each data as value i}}
+        <tr>
+            <td>{{i+1}}</td>
+            <td><span>{{value.assetTypeName}}</span></td>
+            <td>{{value.assetNo}}</td>
+            <td><span>{{value.assetName}}</span></td>
+            <td>{{value.receiveTime}}</td>
+            <td>{{value.returnTime}}</td>
+            <td>{{value.valWorth}}</td>
+        </tr>
+        {{/each}}
+    </script>
+    <script id="assetTypeMenu" type="text/html">
+        <li><span class="kx-checkbox checked_y selectAll"></span><span>全选</span></li>
+        <li role="separator" class="divider"></li>
+        {{each data as value i}}
+        <li class="assetTypeItem"><span class="kx-checkbox checked_y"></span><span title="{{value.value}}">{{value.value}}</span></li>
+        {{/each}}
+    </script>
+</head>
+<body>
+<div id="assetStatement">
+    <div class="assetList clearfix">
+        <ul class="nav nav-tabs clearfix" role="tablist">
+            <li class="active"><a role="tab" data-toggle="tab" href="#currentAsset">当前领用资产</a></li>
+            <li><a role="tab" data-toggle="tab" href="#historicalAsset">历史领用资产</a></li>
+            <li class="exportList"><img src="../../images/personalStatement/icon－xiazai.svg"></li>
+        </ul>
+        <div class="tab-content">
+            <div  role="tabpanel" id="currentAsset" class="tab-pane active">
+                <div class="assetListTable">
+                    <div class="scroll_Div">
+                        <table class="table fixed_head">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>资产编号</th>
+                                    <th>资产名称</th>
+                                    <th class="sortColumn ascending active">领用时间<span class="sortPic"></span></th>
+                                    <th>预计归还时间</th>
+                                    <th>使用期限(月)</th>
+                                    <th>购入时间</th>
+                                    <th>资产原值</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>资产编号</th>
+                                    <th>资产名称</th>
+                                    <th class="sortColumn">领用时间<span class="sortPic"></span></th>
+                                    <th>预计归还时间</th>
+                                    <th>使用期限(月)</th>
+                                    <th>购入时间</th>
+                                    <th>资产原值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dataStatistic"></div>
+                <!--操作行提示框-->
+                <div class="hintMsg"><span>已逾期</span></div>
+            </div>
+            <div  role="tabpanel" id="historicalAsset" class="tab-pane">
+                <div class="assetListTable">
+                    <div class="scroll_Div">
+                        <table class="table fixed_head">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>
+                                        <div class="dropdown">
+                                            <span>
+                                                资产分类
+                                                <span id="assetCategory"><img src="../../images/personalStatement/icon_shaixuan_default.svg"></span>
+                                            </span>
+                                            <ul class="assetTypeMenu">
+
+                                            </ul>
+                                        </div>
+                                    </th>
+                                    <th>资产编号</th>
+                                    <th>资产名称</th>
+                                    <th class="sortColumn">领用时间<span class="sortPic"></span></th>
+                                    <th class="sortColumn active">退库时间<span class="sortPic"></span></th>
+                                    <th>资产原值</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>
+                                        <div class="dropdown">
+                                                <span type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    资产分类
+                                                    <span><img src="../../images/personalStatement/icon_shaixuan_default.svg"></span>
+                                                </span>
+                                        </div>
+                                    </th>
+                                    <th>资产编号</th>
+                                    <th>资产名称</th>
+                                    <th class="sortColumn">领用时间<span class="sortPic"></span></th>
+                                    <th class="sortColumn active">退库时间<span class="sortPic"></span></th>
+                                    <th>资产原值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dataStatistic">
+                    <!--<span class="totalCount">数量<span class="dataValue">3</span></span>
+                    <span>资产原值 <span class="dataValue">11900元</span></span>
+                    <span>使用时长 <span class="dataValue">18个月25天</span></span>
+                    <span>
+                        资产使用成本
+                        <span class="dataValue">715元</span>
+                        <span  class="useCostIntroduction">
+                            <img src="../../images/orgManage/icon_zuzhijiagou_zhankai.svg">
+                        </span>
+                    </span>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script data-main="../../js/personalStatement/assetStatement/assetStatement_main" src="../../js/lib/require.min.js"></script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="../../css/lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/lib/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../css/lib/layer.css" />
+    <link rel="stylesheet" href="../../css/common/public_assembly.css"> <!--头部导航条样式-->
+    <link rel="stylesheet" href="../../css/personalStatement/reimburseStatement.css"/>
+    <title>个人报表-报销</title>
+</head>
+<body>
+    <div id="reimburseStatement">
+        <div class="reimbursement">
+            <div class="timeFilter">
+                <span class="timePicker">
+                    <input class="startTime selectPeriod timeInput" value="" placeholder="" readonly="readonly">
+                </span>
+                <span class="dashLine"></span>
+                <span class="timePicker">
+                    <input class="endTime selectPeriod timeInput" value="" placeholder="" readonly="readonly">
+                </span>
+            </div>
+            <div class="reimburseQty">
+                <div>
+                    <div><span>累计审批报销单据<span id="sumReimburse"></span>个</span></div>
+                    <div id="passRateEchart"></div>
+                </div>
+                <div>
+                    <!--<div><span>审批单据个数趋势</span></div>-->
+                    <div id="qtyTrendEchart"></div>
+                </div>
+            </div>
+            <div class="reimburseRateAnalyse">
+                <div class="efficiencyMsg"><span>审批效率对比分析</span><span><img src="../../images/personalStatement/icon_tishi.svg"></span></div>
+                <div id="efficiencyEchart"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script data-main="../../js/personalStatement/reimburseStatement/reimburseStatement_main" src="../../js/lib/require.min.js"></script>
+</html>

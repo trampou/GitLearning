@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目管理</title>
+    <link rel="stylesheet" href="../../css/common/public_assembly.css"/>
+    <link rel="stylesheet" href="../../css/personalStatement/projectManagement.css"/>
+</head>
+<script type="text/html" id="trContent">
+    {{each data as td index}}
+    <tr>
+        <td>{{td.order}}</td>
+        <td>{{td.projectName}}</td>
+        <td>{{td.projectRole}}</td>
+        <td>{{td.projectStatus}}</td>
+        <td>{{td.workTime}}</td>
+        <td>{{td.fileTime}}</td>
+        <td>{{td.memberCount}}</td>
+    </tr>
+    {{/each}}
+</script>
+<body>
+<div id="cl_projectManagementWrap">
+    <header id="headerOne"></header>
+    <article>
+        <section id="top">
+            <div id="topLeft">
+                <p>参与项目个数总览</p>
+                <div id="joinByMonth">
+                    <span><!--17--></span>
+                    <span>本月</span>
+                    <p id="member"><span id="manager"></span></p>
+                    <p id="ingProject"><span id="filed"></span></p>
+                </div>
+                <div id="joinByYear">
+                    <span><!--35--></span>
+                    <span>本年累计</span>
+                    <p id="memberYear"><span id="managerYear"></span></p>
+                </div>
+                <div id="joinAll">
+                    <span><!--85--></span>
+                    <span>入职至今</span>
+                    <p id="memberAll"><span id="managerAll"></span></p>
+                </div>
+            </div>
+            <div id="topRight">
+                <div id="myEcharts">
+
+                </div>
+            </div>
+        </section>
+        <section id="bottom">
+            <header>
+                <p>
+                    项目详表
+                    <span id="J_detailLayer"></span>
+                </p>
+                <div class="headerRight">
+                    <p><!--2015年12月--></p>
+                    <span class="openSelect"></span>
+                    <p><!--—--></p>
+                    <p><!--2016年12月--></p>
+                    <span class="openSelectTwo"></span>
+                    <p></p>
+                    <p></p>
+                </div>
+            </header>
+            <table id="tableHeader">
+                <tbody>
+                    <tr>
+                        <td>序号</td>
+                        <td>项目名称</td>
+                        <td>项目角色</td>
+                        <td>项目状态</td>
+                        <td>
+                            工期
+                            <span></span>
+                        </td>
+                        <td>
+                            归档日期
+                            <span></span>
+                        </td>
+                        <td>
+                            成员人数
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <table id="tableContent">
+                    <tbody>
+                    <!--<tr>
+                        <td>1</td>
+                        <td>杭州薪酬开发项目</td>
+                        <td>项目经理</td>
+                        <td>进行中</td>
+                        <td>115</td>
+                        <td>-</td>
+                        <td>5</td>
+                    </tr>-->
+                    </tbody>
+                </table>
+                <div id="noDataContainer">
+                        <img src="../../images/personalStatement/icon_project_noData.svg"/>
+                        <p>暂无项目详情数据</p>
+                </div>
+            </div>
+
+        </section>
+    </article>
+    <!--通用的提示层-->
+    <div id="cl_tipOne">
+        <div id="cl_commonTipLayerUp">
+            <p>项目角色结构</p>
+            <p><!--项目经理：9--></p>
+            <p><!--项目成员：6--></p>
+        </div>
+        <div></div><!-- class="beforeUp"-->
+    </div>
+    <!--项目详表提示层-->
+    <div id="cl_tipTwo">
+        <p>1、工期指工作日；</p>
+        <p>2、进行中的项目为计划工期，归档项目为实际工期；</p>
+        <p>3、进行中项目计划工期的计算规则：计划结束时间-计划开始时间，算头不算尾；</p>
+        <span>4、</span>
+        <span>归档项目的实际工期计算规则：开始时间以第一个任务的实际开始时间为准，结束</span>
+        <pre>    时间以项目归档时间为准；如果项目存在归档后重新打开的情况，需要分段计算项</pre>
+        <pre>    目的实际工期，重新打开后的工期开始时间以重新打开的时间为准，实际结束时间</pre>
+        <pre>    以归档时间为准</pre>
+    </div>
+    <div id="cl_filter">
+        <p>项目角色</p>
+        <div class="projectRole">
+            <span>全部</span>
+            <span>项目经理</span>
+            <span>项目成员</span>
+        </div>
+        <p>项目状态</p>
+        <div class="projectStatus">
+            <span>全部</span>
+            <span>已归档</span>
+            <span>未归档</span>
+        </div>
+        <button>确定</button>
+        <button>清除</button>
+    </div>
+    <div class="arrow"></div>
+    <div class="filterTime"></div>
+</div>
+
+<script src="../../js/lib/require.min.js" data-main="../../js/personalStatement/projectManagement/projectManagement_main.js"></script>
+</body>
+</html>
+<!--
+作者：陈丽
+最新更新：2017/03/10
+功能：项目页面
+-->

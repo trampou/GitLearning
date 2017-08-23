@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="趣味魔方" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.0.1-个人报表瞬间" transform="translate(-592.000000, -209.000000)">
+            <rect id="Rectangle-path" fill="#FAFBFE" x="0" y="0" width="900" height="600"></rect>
+            <rect id="Rectangle-2" stroke="#EEEEEE" fill="#FFFFFF" x="320" y="66" width="570" height="524" rx="2"></rect>
+            <polygon id="Shape" fill="#94CDFF" opacity="0.1" points="609 236 498 318.479247 540.413684 452 677.586316 452 720 318.479247"></polygon>
+            <path d="M609,237 L609,346.038109" id="Shape" stroke="#64ACED" stroke-width="0.5" opacity="0.2"></path>
+            <g id="Group-5" transform="translate(592.000000, 209.000000)">
+                <circle id="Oval" fill="#43B9F4" cx="17.6" cy="17.8" r="17"></circle>
+                <g id="Page-1_77_" transform="translate(3.000000, 3.000000)">
+                    <g id="设计模式库02_90_">
+                        <g id="Group-24_5_">
+                            <g id="模块_5_">
+                                <g id="瞬间_1_">
+                                    <g id="Group-8_1_" opacity="0.6" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                                        <path d="M6.5,1.4 C3,2.7 0.5,6 0.5,9.9 C0.5,10.8 0.6,11.8 0.9,12.6 L7,6.7 C8.1,5.8 9.6,5.5 11,5.9 L7.9,2.8 L6.5,1.4 L6.5,1.4 L6.5,1.4 Z M12.7,18.2 C16.2,16.9 18.7,13.6 18.7,9.7 C18.7,8.8 18.6,7.8 18.3,7 L12.4,12.7 C11.3,13.8 9.6,14.2 8.2,13.7 L9.8,15.2 L11.4,16.7 L12.7,18.2 L12.7,18.2 L12.7,18.2 Z" id="Combined-Shape_12_" opacity="0.9"></path>
+                                        <path d="M1.2,12.9 C2.5,16.4 5.8,18.9 9.7,18.9 C10.6,18.9 11.6,18.8 12.4,18.5 C11.3,17.4 6.7,12.7 6.7,12.7 C5.6,11.6 5.2,9.9 5.6,8.5 L2.5,11.6 L1.2,12.9 L1.2,12.9 L1.2,12.9 Z M6.8,1.1 C7.7,0.8 8.6,0.7 9.5,0.7 C13.4,0.7 16.7,3.2 18,6.7 L15.1,9.7 L13.6,11.3 C14,9.9 13.7,8.3 12.6,7.2 L6.8,1.1 L6.8,1.1 L6.8,1.1 Z" id="Combined-Shape_11_" opacity="0.9"></path>
+                                        <path d="M7.1,7.3 C8.5,5.9 10.7,5.9 12,7.3 C13.4,8.7 13.4,10.9 12,12.2 C10.6,13.6 8.4,13.6 7.1,12.2 C5.8,10.9 5.8,8.7 7.1,7.3 L7.1,7.3 L7.1,7.3 L7.1,7.3 Z" id="Shape_10_"></path>
+                                    </g>
+                                    <rect id="icon_shunjian_1_" x="0.6" y="0.8" width="28" height="28"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

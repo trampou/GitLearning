@@ -1,0 +1,602 @@
+/*
+作者：陈丽
+最新更新：2017/03/10
+功能：个人报表项目的样式表
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-margin-before: 0em; /*浏览器默认给p设了这个距离，但是我在这里覆盖为0好像也木有效。*/
+    -webkit-margin-after: 0em;
+}
+/*自定义滚动条样式*/
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#A9B2BA;
+    border-radius: 10px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+#cl_projectManagementWrap {
+    min-width: 820px;
+    min-height: 600px;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+
+#cl_projectManagementWrap > header { /*头部*/
+    width: 100%;
+    height: 55px;
+    border: 1px solid #EEEEEE;
+    /*background:orange;*/
+    box-sizing: border-box;
+}
+
+#cl_projectManagementWrap > article { /*装内容的直接容器*/
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    /*background:lightcoral;*/
+}
+
+#cl_projectManagementWrap > article > section:nth-of-type(1) { /*图表区*/
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    bottom: 299px;
+    height:209px;
+   /* background:lightcyan;*/
+}
+
+#cl_projectManagementWrap > article > section:nth-of-type(2) { /*项目详情的表格*/
+    position: absolute;
+    top: 235px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    /*background:lightpink;*/
+}
+
+#cl_projectManagementWrap > article > section:nth-of-type(1) #topLeft { /*图表区左边*/
+    width: 18%;
+    border-right: 1px solid rgba(225, 225, 225, 0.35);
+    padding-right: 15px;
+    display:inline-block;
+    vertical-align: top;
+    /*background:orange;*/
+}
+
+#cl_projectManagementWrap > article > section:nth-of-type(1) #topRight {/*图标区右边*/
+    height:100%;
+    width:79%;
+    /*background:lightgreen;*/
+    display:inline-block;
+    vertical-align: top;
+    position:relative;
+}
+
+/*图标区左边的内容start*/
+#cl_projectManagementWrap > article > section:nth-of-type(1) #topLeft > p:nth-of-type(1) { /*图表区左边大标题*/
+    /*margin-top: 15px;*/
+    margin-bottom: 6px;
+    /*border: 1px solid red;*/
+    color: #546576;
+}
+/*左边这写图形分别用三个有固定宽高的盒子包着，这样在动态渲染的时候不会因为上一个先渲染第二个或第三个图形而影响了这左边的整体布局,即js的执行顺序不会影响到布局*/
+#cl_projectManagementWrap #joinByMonth{
+    width:100%;
+    height:66px;
+    /*background:orange;*/
+}
+#cl_projectManagementWrap #joinByYear{
+    width:100%;
+    height:51px;
+    /*background:lightgreen;*/
+}
+#cl_projectManagementWrap #joinAll{
+    width:100%;
+    height:51px;
+    /*background:lightcoral;*/
+}
+/*图表区左边标题性文字*/
+#cl_projectManagementWrap #joinByMonth>span:nth-of-type(1), #cl_projectManagementWrap #joinByYear>span:nth-of-type(1), #cl_projectManagementWrap #joinAll>span:nth-of-type(1) {
+    font-family: Arial; /*数字*/
+    font-size: 24px;
+    color: #333333;
+}
+
+#cl_projectManagementWrap #joinByMonth>span:nth-of-type(2), #cl_projectManagementWrap #joinByYear>span:nth-of-type(2),
+#cl_projectManagementWrap #joinAll>span:nth-of-type(2) {
+    color: #999999; /*文字描述*/
+}
+
+/*图表区的长条条*/
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(1),
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(2),
+#cl_projectManagementWrap #joinByYear>p,
+#cl_projectManagementWrap #joinAll>p{
+    margin-top: 3px;
+    border-radius: 1px;
+    width: 100%;
+    height: 12px;
+    position: relative;
+}
+
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(1){
+    background: #D2E1FC; /*第一个的底*/
+}
+
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(2){
+    margin-bottom: 12px; /*第二个的底*/
+    background: #D8F6D4;
+}
+
+#cl_projectManagementWrap #joinByYear>p:nth-of-type(1),#cl_projectManagementWrap #joinAll>p:nth-of-type(1){
+    background: #D2E1FC; /*第三、四个的底*/
+    margin-bottom: 12px;
+}
+
+#cl_projectManagementWrap #joinByMonth>p>span,
+#cl_projectManagementWrap #joinByYear>p>span,
+#cl_projectManagementWrap #joinAll>p>span{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   /* width: 50%;*/
+    height: 12px;
+}
+
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(1)>span,
+#cl_projectManagementWrap #joinByYear>p>span,
+#cl_projectManagementWrap #joinAll>p>span{
+    background: #76B6F1; /*第一、三、四个的表层*/
+}
+
+#cl_projectManagementWrap #joinByMonth>p:nth-of-type(2)>span{
+    background: #90E485; /*第二个的表层*/
+}
+/*图标区左边的内容end*/
+
+/*图标区右边的内容start*/
+#cl_projectManagementWrap > article > section:nth-of-type(1) #topRight #myEcharts{
+    position:absolute;
+    left:2.2%;
+    top:0px;
+    right:3%;
+    bottom:0px;
+}
+/*图标区右边的内容end*/
+
+/*下面项目详情的表格*/
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header{
+    height:24px;
+    line-height:24px;
+    /*background:lightcyan;*/
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header p,#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>span{  /*两个下拉的箭头和所有的p[标签*/
+    display:inline-block;
+    height:24px;
+    vertical-align: top;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header>p:nth-of-type(1){  /*项目详表*/
+    display:inline-block;
+    margin-right:42.5%;
+    color:#546576;
+    width:81px;
+    vertical-align: top;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header>p:nth-of-type(1)>span{
+    display:inline-block;
+    width:14px;
+    height:24px;
+    background:url("../../images/personalStatement/icon_tishi.svg") no-repeat -2px 3px;
+    vertical-align: top;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight{
+    display:inline-block;
+    float:right;
+    margin-right:5px;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(1),#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(3) {  /*两个选择的时间*/
+    color:#999999;
+    font-size:12px;
+    width:67px;
+    /*border:1px solid orange;*/
+    /*background:url("../../images/personalStatement/icon_shijianxiala.svg") no-repeat right;*/
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(2) {  /*两个时间中间的横杠*/
+    width:9px;
+   /* border:1px solid red;*/
+    color:#999999;
+    overflow:hidden;
+    margin-left:-3px;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(4){  /*导出*/
+   /* border:1px solid yellow;*/
+    margin-right:10px;
+    width:30px;
+    background: url("../../images/personalStatement/icon_xiazai.svg") no-repeat 3px 3px ;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(4):hover{
+    /*border:1px solid red;*/
+    background:url('../../images/personalStatement/icon_daochu_hover.svg') no-repeat;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(5){  /*类别下拉框*/
+    float:right;
+   /* margin-right:10px;*/
+    width:30px;
+    /*border:1px solid yellow;*/
+    background: url("../../images/personalStatement/icon_shaixuan_default.svg") no-repeat center;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header .headerRight>p:nth-of-type(5):hover{
+    background: url("../../images/personalStatement/icon_shaixuan_click.svg") no-repeat center;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>header>.headerRight .openSelect,#cl_projectManagementWrap > article > section:nth-of-type(2)>header>.headerRight .openSelectTwo{
+    margin-left:-5px;
+    width:15px;
+    height:24px;
+    /*border:1px solid green;*/
+    background:url("../../images/personalStatement/icon_down.svg") no-repeat center;
+    display:none;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2) table{
+    /*width:99.4%;*/
+    width:100%;
+    min-width:771px;
+    border: 1px solid #EEEEEE;
+    border-right:none;
+    border-left:none;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2) #tableHeader{
+
+}
+#cl_projectManagementWrap > article > section:nth-of-type(2)>div{
+    width:100%;
+    position:absolute;
+    top:69px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*两个表格内的行的高都是45px*/
+#tableHeader>tbody>tr,
+#tableContent>tbody>tr{
+    /*background: #FAFAFA;*/
+    height:45px;
+}
+#tableHeader>tbody>tr>td{
+    text-align:center;
+    font-size: 12px;
+    color: #333333;
+    /*border:1px solid red;*/
+}
+#tableContent>tbody>tr>td{
+    text-align:center;
+    font-size: 12px;
+    color: #999999;
+    /*border:1px solid red;*/
+    border: 1px solid #EEEEEE;
+    border-right:none;
+    border-left:none;
+}
+#tableContent>tbody>tr:nth-child(2n){
+    background: #FFFFFF;
+}
+/*序号那一列*/
+#tableHeader>tbody>tr>td:nth-of-type(1),#tableContent>tbody>tr>td:nth-of-type(1){
+    width:5%;
+    /*background:lightgreen;*/
+    font-family:"Arial";
+    color: #333333;
+}
+/*项目名称那一列*/
+#tableHeader>tbody>tr>td:nth-of-type(2),#tableContent>tbody>tr>td:nth-of-type(2){
+    width:30%;
+    word-wrap: break-word;
+}
+/*项目角色，项目状态那一列*/
+#tableHeader>tbody>tr>td:nth-of-type(3),#tableContent>tbody>tr>td:nth-of-type(3),#tableHeader>tbody>tr>td:nth-of-type(4),#tableContent>tbody>tr>td:nth-of-type(4){
+    width:10.5%;
+}
+/*工期,归档日期*/
+#tableHeader>tbody>tr>td:nth-of-type(5),#tableContent>tbody>tr>td:nth-of-type(5),#tableHeader>tbody>tr>td:nth-of-type(6),#tableContent>tbody>tr>td:nth-of-type(6){
+    width:15%;
+}
+#tableHeader>tbody>tr>td:nth-of-type(5) span,#tableHeader>tbody>tr>td:nth-of-type(6) span,#tableHeader>tbody>tr>td:nth-of-type(7) span{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    /*border:1px solid orange;*/
+    vertical-align: middle;
+}
+#tableHeader>tbody>tr>td:nth-of-type(5) span{
+    background:url("../../images/personalStatement/icon－xiangshang.svg") no-repeat center;
+}
+#tableHeader>tbody>tr>td:nth-of-type(5) span:hover{
+    transform: rotate(180deg);
+    background:url("../../images/personalStatement/icon_arrow_up_hover.svg") no-repeat center;
+}
+#tableHeader>tbody>tr>td:nth-of-type(6) span{
+    background:url("../../images/personalStatement/icon－xiangxia.svg") no-repeat center;
+}
+#tableHeader>tbody>tr>td:nth-of-type(6) span:hover{
+    background:url("../../images/personalStatement/icon－xiangxia－click.svg") no-repeat center;
+}
+#tableHeader>tbody>tr>td:nth-of-type(7) span{
+    background:url("../../images/personalStatement/icon－xiangxia.svg") no-repeat center;
+}
+#tableHeader>tbody>tr>td:nth-of-type(7) span:hover{
+    background:url("../../images/personalStatement/icon－xiangxia－click.svg") no-repeat center;
+}
+/*表格无数据状态*/
+#cl_projectManagementWrap #noDataContainer{
+    height:99.5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display:none;
+}
+#cl_projectManagementWrap #noDataContainer p{
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+/*通用提示层*/
+#cl_tipOne{
+    position:relative;
+    /*border:1px solid red;*/
+    display:none;
+    width:50%;
+}
+#cl_commonTipLayerUp{
+    width:90px;
+    height:55px;
+    background: rgba(23,39,51,0.80);
+    border-radius:2px;
+    padding-top:5px;
+}
+.afterUp{  /*箭头朝下*/
+    position:absolute;
+    border-top:8px solid rgba(23,39,51,0.80);
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:none;
+    margin-left:35px;
+}
+.beforeUp{  /*箭头朝上*/
+    position:absolute;
+    border-top:none;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid rgba(23,39,51,0.80);
+    margin-left:35px;
+    margin-top:-68px;
+}
+#cl_commonTipLayerUp p:nth-of-type(1){
+    text-align: center;
+}
+#cl_commonTipLayerUp p{
+    font-size:10px;
+    -webkit-transform:scale(0.8);
+    color:#ffffff;
+    text-align:left;
+}
+/*项目经理前面的小框框*/
+#cl_commonTipLayerUp .managerBefore:before{
+    display:inline-block;
+    content:"";
+    border:3px solid #76B6F1;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-right:5px;
+}
+/*项目成员前面的小框框*/
+#cl_commonTipLayerUp .memberBefore:before{
+    display:inline-block;
+    content:"";
+    border:3px solid #D2E1FC;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-right:5px;
+}
+/*已归档前面的小框框*/
+#cl_commonTipLayerUp .filedBefore:before{
+    display:inline-block;
+    content:"";
+    border:3px solid #90E485;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-right:5px;
+}
+/*未归档前面的小框框*/
+#cl_commonTipLayerUp .ingProjectBefore:before{
+    display:inline-block;
+    content:"";
+    border:3px solid #D8F6D4;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-right:5px;
+}
+#cl_tipTwo{
+    width:525px;
+    height:173px;
+    box-sizing:border-box;
+    padding:8px 17px 0px 17px;
+    font-size: 12px;
+    color: #2A2A2A;
+    letter-spacing: 1px;
+    line-height: 23px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 2px;
+    left:30px;
+    position: absolute;
+    top: 326px;
+    display:none;
+}
+#cl_tipTwo span:nth-of-type(2){
+    margin-left:-5px;
+}
+#cl_tipTwo pre{
+    font-family:"microsoft yahei";
+    font-size: 12px;
+    color: #2A2A2A;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+#cl_tipTwo pre:nth-of-type(1){
+    margin-left:2px;
+}
+#cl_tipTwo pre:nth-of-type(2),#cl_tipTwo pre:nth-of-type(3){
+    margin-left:1px;
+}
+/*筛选条件框start*/
+#cl_filter{
+    width:254px;
+    height:165px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;/**/
+    margin-left:30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 2px;
+    padding-left:16px;
+    padding-top:13px;
+    font-size: 12px;
+    color: #999999;
+    line-height: 14px;
+    position:absolute;
+    top:326px;
+    right:10px;
+    display:none;
+}
+#cl_filter>p:nth-of-type(1){
+    height:17px;
+    width:50px;
+    border-bottom:1px solid #999999;
+}
+#cl_filter>div{
+    height:42px;
+    padding-top:7px;
+    padding-left:20px;
+    /*border:1px solid red;*/
+    box-sizing:border-box;
+}
+#cl_filter>div>span:nth-of-type(2){  /*项目经理和已归档*/
+   margin-left:27px;
+}
+#cl_filter>div:nth-of-type(1)>span:nth-of-type(3){
+    /*项目成员*/
+    margin-left:27px;
+}
+#cl_filter>div:nth-of-type(2)>span:nth-of-type(3){
+    /*项目成员*/
+    margin-left:30px;
+}
+#cl_filter>p:nth-of-type(2){
+    height:18px;
+    width:50px;
+    line-height:18px;
+    border-bottom:1px solid #999999;
+}
+#cl_filter>button:nth-of-type(1){
+    /*确定按钮*/
+    width:60px;
+    height:30px;
+    background: #70BF73;
+    border: 1px solid #39953E;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+#cl_filter>button:nth-of-type(1):hover{
+    background: #61A563;
+}
+#cl_filter>button:nth-of-type(1):active{
+    background: #569559;
+}
+#cl_filter>button:nth-of-type(2):hover{
+    background: #E1E1E1;
+}
+#cl_filter>button:nth-of-type(2):active{
+    background: #C6C6C6;
+}
+#cl_filter>button:nth-of-type(1),#cl_filter>button:nth-of-type(2){
+    outline:none;
+}
+#cl_filter>button:nth-of-type(2){
+    /*取消按钮*/
+    width:60px;
+    height:30px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    color: #999999;
+    margin-left:15px;
+}
+#cl_filter .optionChoosed {
+    color: #546576;
+}
+/*筛选条件框end*/
+/*类似对话框的小三角形*/
+.arrow{
+    display:none;
+    width:8px;
+    height:8px;
+    position:absolute;
+    top:322px;
+    left:83px;
+    transform:rotate(45deg);
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: -.5px -.5px 0px 0px rgba(0,0,0,0.20);
+    border-right:none;
+    border-bottom:none;
+}
+/*用户选时间的框框*/
+#cl_projectManagementWrap .filterTime{
+    max-width: 92px;
+    position: absolute;
+    max-height: 146px;
+    overflow-y: auto;
+    top: 324px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    border-radius: 2px;
+    border: 1px solid #EEEEEE;
+    color: #666666;
+    display:none;
+    background:#ffffff;
+}
+#cl_projectManagementWrap .filterTime span{
+    display:block;
+    padding: 5px 10px 5px 10px;
+}
+#cl_projectManagementWrap .filterTime span:hover{
+    background:#E1E1E1;
+}

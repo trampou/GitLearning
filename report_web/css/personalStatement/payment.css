@@ -1,0 +1,160 @@
+.title-right {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+.grayColor {
+  color: #666666;
+}
+.gray {
+  color: #999999;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+.blue {
+  color: #00ABFF;
+  font-size: 24px;
+  font-family: STXihei;
+}
+#container {
+  margin-top: 65px;
+}
+
+body {
+  background-color: #FAFBFE;
+}
+.main {
+  min-width: 800px;
+  width: 97.7%;
+  height: 525px;
+  margin: 10px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666666;
+}
+.main .billIcon {
+  margin: 0 10px;
+  display: none;
+  width: 98%;
+  height: 50%;
+}
+.main .billIcon img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 57px;
+  position: relative;
+  left: 0px;
+}
+.main .billIcon p {
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  color: #C5C5C5;
+  text-align: center;
+}
+.main table {
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  margin: 0 auto;
+  width: 98%;
+  height: 100%;
+}
+.main table tr {
+  width: 100%;
+}
+.main table tr:nth-child(1,3) {
+  background-color: #F6F6F6;
+}
+.main table tr td {
+  border: 0.5px solid #EEEEEE;
+  text-align: center;
+  width: 12.5%;
+  height: 44px;
+}
+.main .title {
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  font-weight: 500;
+  padding: 12px 12px 0px 12px;
+}
+.main .title #timeSelect {
+  width: 100px;
+  height: 200px;
+  border: 1px solid #CCCCCC;
+  box-shadow: -1px 0.5px 1px 1px #CCCCCC;
+  overflow: auto;
+  display: none;
+  position: absolute;
+  top: 312px;
+  right: 3.1%;
+  background-color: white;
+  z-index: 2;
+}
+.main .title #timeSelect p {
+  margin: 0px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.main .title #timeSelect p:hover {
+  background-color: #EEEEEE;
+}
+#SalaryOverview {
+  font-family: "microsoft yahei";
+  font-size: 12px;
+  width: 100%;
+  height: 155px;
+}
+#SalaryOverview div {
+  display: inline-block;
+  vertical-align: top;
+}
+#SalaryOverview .Income {
+  width: 41%;
+  margin: 0;
+  padding: 17px 1% 0% 4%;
+}
+#SalaryOverview .Income div {
+  margin-left: 30px;
+}
+#SalaryOverview .Income div .fontCheck {
+  position: relative;
+  left: -10px;
+  color: #C5C5C5;
+}
+#SalaryOverview .barIncome {
+  color: #999;
+  padding: 17px 0% 0% 6%;
+  height: inherit;
+  width: 56.5%;
+}
+#SalaryOverview .barIncome div {
+  width: 80%;
+}
+#SalaryOverview .barIncome div .bar {
+  display: inline-block;
+  height: 8px;
+  width: 0%;
+  background-color: #8CD9FF;
+  border-radius: 5px;
+}
+#SalaryOverview .barIncome div .fill {
+  margin: 0 10px;
+  display: inline-block;
+  height: 10px;
+  width: 60%;
+}
+#SalaryOverview .rowline {
+  margin: 5px;
+  width: 1px;
+  height: 128px;
+  position: relative;
+  top: 10px;
+  background-color: #EEEEEE;
+}

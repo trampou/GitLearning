@@ -1,0 +1,56 @@
+body .layer {
+  overflow: hidden;
+}
+#container {
+  margin: 70px 10px 10px 10px;
+  width: 97.5%;
+  height: 520px;
+  border: 1px solid #EEEEEE;
+  overflow: auto;
+  font-family: "microsoft yahei";
+  padding: 0px 0px 0px 0px;
+}
+#container #count {
+  width: 100%;
+  height: 47.1%;
+}
+#container #count .count {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  height: 100%;
+  float: left;
+}
+#container #count .count p.title {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666666;
+}
+#container #count .count p.choose {
+  color: #B0BDC9;
+  font-family: Helvetica;
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+}
+#container .table {
+  width: 100%;
+  font-family: "microsoft yahei";
+  color: #666666;
+  font-size: 12px;
+  padding: 0 20px;
+  overflow: auto;
+}
+#container .table #tableTitle .titleRight {
+  float: right;
+}
+#container .table #table {
+  width: 100%;
+  overflow: auto;
+}
+#container .table #table table {
+  width: 150%;
+}
+#container .table #table table tr {
+  height: 45px;
+}

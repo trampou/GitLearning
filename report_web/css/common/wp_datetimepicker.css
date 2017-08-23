@@ -1,0 +1,54 @@
+.datetimepicker .datetimepicker-days .wp-footer{
+    padding-top: 18px;
+    border-top: 2px solid #E1E1E1;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer .wp-timeSelect,
+.datetimepicker .datetimepicker-days .wp-footer .wp-timeInput{
+    position: absolute;
+    outline: none;
+    border:none;
+    left: 22px;
+    width: 60px;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer .wp-timeInput[readonly]{
+    background:white;
+    border:none;
+    padding-left: 2px;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer .wp-timeSelect{
+    bottom: -159px;
+    background: white;
+    border: 1px solid gray;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer button{
+    border-radius: 4px;
+    width: 60px;
+    height: 30px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer .ensure{
+    background: #70BF73;
+    border: 1px solid #39953E;
+    color: #FFFFFF;
+    margin-left: 80px;
+}
+
+.datetimepicker .datetimepicker-days .wp-footer .clear{
+    color: #999999;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    margin-left: 5px;
+}
+
+.input-group-addon{
+    background-color:white;
+    border:none;
+}

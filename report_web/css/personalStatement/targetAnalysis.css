@@ -1,0 +1,236 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/*自定义滚动条样式*/
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#A9B2BA;
+    border-radius: 10px;
+}
+html,body{
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #000000;
+    width:100%;
+    height:100%;
+}
+#cl_targetAnalysisWrap{
+    min-width:820px;
+    min-height:600px;
+    width:100%;
+    height:100%;
+    /*background:lightcoral;*/
+    position:relative;
+}
+#cl_targetAnalysisWrap #topHeader{
+    height:55px;
+    width:100%;
+    /*background:orange;*/
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom:10px;
+    box-sizing:border-box;
+}
+#cl_targetAnalysisWrap #contentArea{
+    position:absolute;
+    top:65px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    /*background:yellow;*/
+}
+#cl_targetAnalysisWrap #contentArea #graphArea{
+    margin:0px 10px 0px 10px ;
+    height:200px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing:border-box;
+}
+#cl_targetAnalysisWrap #contentArea #commentArea{
+   position:absolute;
+    top:200px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    /*background:lightcyan;*/
+}
+#cl_targetAnalysisWrap #commentAreaHeader{
+    height:25px;
+    margin:3px 10px 0px 24px;
+    /*background:orange;*/
+}
+#cl_targetAnalysisWrap #commentAreaHeader>span:nth-of-type(1){  /*绩效评价*/
+    font-size: 14px;
+    color: #666666;
+    text-align:center;
+    line-height:25px;
+    /*background:lightgrey;*/
+}
+#cl_targetAnalysisWrap #commentAreaHeader>span:nth-of-type(2){
+    float:right;
+    line-height:25px;
+    margin-right:23px;
+}
+#cl_targetAnalysisWrap #commentAreaHeader>span:nth-of-type(3){
+    float:right;
+    margin-top:12px;
+    margin-right:-66px;
+    display:inline-block;
+    border:5px solid #D8D8D8;;
+    border-bottom:none;
+    border-right:6px solid transparent;
+    border-left:6px solid transparent;
+}
+#cl_targetAnalysisWrap #commentAreaContent{
+    top:30px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    position:absolute;
+    /*background:#eeeeee;*/
+    overflow-y:auto;
+}
+#cl_targetAnalysisWrap #commentAreaContent .commentContent{
+    height:124px;/*用百分比放大后很丑啊*/
+    width:100%;
+    /*background:lawngreen;*/
+    box-sizing:border-box;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft{
+    display:inline-block;
+    height:100%;
+    width:18%;
+    /*background:lightcyan;*/
+    vertical-align: top;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftLeft{
+    display:inline-block;
+    vertical-align: top;
+    width:60%;
+    height:90px;
+    margin-top:34px;
+    /*background:orange;*/
+    text-align: right;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftLeft>span:nth-of-type(1){
+    /*季度数字*/
+    font-family: Arial;
+    font-size: 21px;
+    margin-right:3px;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftLeft>span:nth-of-type(2){
+    /*季度文字*/
+    color:#666666;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftLeft>p{
+    /*年份数字*/
+    font-family: Arial;
+    color:#999999;
+    margin-right:3px;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftRight{
+    display:inline-block;
+    width:30%;
+    margin-left:5%;
+    height:100%;
+    /*background:lightgreen;*/
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftRight>span{
+    display:block;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftRight>span:nth-of-type(1){
+    width:1px;
+    height:42px;
+    background:#E1E6EA;;
+    margin-left:48%;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftRight>span:nth-of-type(2){
+    width:12px;
+    height:12px;
+    border-radius:6px;
+    margin-left:35%;
+    background:#E1E6EA;
+}
+#cl_targetAnalysisWrap #commentAreaContent .timeLeft .timeLeftRight>span:nth-of-type(3){
+    width:1px;
+    height:70px;
+    margin-left:48%;
+    background:#E1E6EA;;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight{
+    display:inline-block;
+    width:75%;
+    height:80%;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>header{
+    height:25px;
+    border-bottom:1px solid #E8E8E8;
+    box-sizing:border-box;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>header>span{
+    display:inline-block;
+    line-height:25px;
+    margin-left:20px;
+    color:#546576;
+    border-bottom:2px solid #B0BDCA;
+    box-sizing:border-box;
+
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article{
+   /* background:orange;*/
+    height:75px;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article .left{
+    width:12%;
+    margin-top:10px;
+    height:53px;
+    padding-top:5px;
+    border-right:1px solid #EEEEEE;
+    display:inline-block;
+    /*background:lightcoral;*/
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article .left img{
+    display:block;
+    width:19px;
+    height:19px;
+    margin:0 auto;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article .left p{
+    color:#999999;
+    width:30px;
+    margin:0 auto;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article .right{
+     width:85%;
+    height:60px;
+    vertical-align: top;
+    margin:10px 0px 5px 0px;
+    display:inline-block;
+    padding:0px 10px 0px 20px ;
+    font-size: 12px;
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 24px;
+    box-sizing:border-box;
+    overflow-y:auto;
+}
+#cl_targetAnalysisWrap #commentAreaContent .contentRight>article>span{
+    display:inline-block;
+    position:absolute;
+    top:85px;/*用js控制*/
+    left:460px;
+    width:24px;
+    height:24px;
+    border-radius:17px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+   /* transform:rotate(180deg);*/
+    background:url("../../images/personalStatement/icon_down.svg") no-repeat center #FFFFFF;
+}
+#cl_targetAnalysisWrap .employee{
+    display:none;  /*所有员工自评先藏起来*/
+}

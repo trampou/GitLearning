@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会议</title>
+		<link href="../../css/lib/bootstrap.css" rel="stylesheet">
+		<link href="../../css/lib/layer.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../css/personalStatement/meeting.css"/>
+		<link rel="stylesheet" href="../../css/common/public_assembly.css"> <!--头部导航条样式-->
+	</head>
+	<body>
+		<div id="container">
+			<div id="selectBeginTime"></div>
+			<div id="selectEndTime"></div>
+			<p class="timeSelect">
+				<span>
+					<span></span>
+					<img src="../../images/personalStatement/icon－shijianxiala.svg"/> 
+				</span>
+				 &#8722; 
+				<span>
+					<span></span>
+					<img src="../../images/personalStatement/icon_shijianxiala.svg"/> 
+				</span>
+			</p>
+			<p class="line"></p>
+			<div id="meetingTrend" style=" width:110%;height:280px;"></div>
+			<div id="meetingCount">
+				<p class="navigation">
+					<span class="nav">期间会议统计</span> 
+					<span class="Right"> &nbsp;</span> <span class="Right">&nbsp;</span>
+				</p>
+				<div>
+					<span class="border-right"></span>
+					<p class="title" ><span id="meetingNum">会议个数</span></p>
+					<p><span class="bigSize cgreen" ></span>个</p>
+				</div>
+				<div>
+					<span class="border-right" ></span>
+					<p class="title"><span id="meetingTime">开会时长</span></p>
+					<p><span class="bigSize cblue" ></span>小时</p>
+				</div>
+				<div>
+					<!--<span class="border-right" ></span>-->
+					<p class="title"><span id="meetingTime">平均会议时长</span></p>
+					<p><span class="bigSize cblue" ></span>小时/个</p>
+					<!--<p class='mediumSize' id="medium">平均会议时长  <span class="bigerSize cgreen"></span><span class="Right mediumSize">小时/个</span></p>
+					<p class="mediumSize">每天会议时长 : <span class="bigerSize cblue"></span><span class="Right mediumSize">小时/天</span></p>-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script data-main="../../js/personalStatement/meeting/meeting_main" src="../../js/lib/require.min.js"></script>

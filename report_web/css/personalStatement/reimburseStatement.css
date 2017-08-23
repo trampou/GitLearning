@@ -1,0 +1,153 @@
+*{
+    outline: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+div#reimburseStatement{
+    width: 100%;
+    height: 100%;
+    min-width: 820px;
+    min-height: 600px;
+    background-color: #FAFBFE;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+}
+
+div.reimbursement{
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 65px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+div.reimbursement .timeFilter{
+    height: 45px;
+    padding: 12px 22px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+div.reimbursement .timeFilter .timePicker{
+    display: inline-block;
+    height: 20px;
+}
+
+div.reimbursement .timeFilter .timePicker .timeInput{
+    display: block;
+    float: left;
+    margin-left: 5px;
+    padding-right: 20px;
+    width: 85px;
+    height: 18px;
+    padding: 0px;
+    font-size: 12px;
+    border: none;
+    color: #666666;
+    background: url('../../images/personalStatement/icon－shijianxiala.svg') right center no-repeat;
+}
+
+div.reimbursement .timeFilter .dashLine{
+    display: inline-block;
+    width: 9px;
+    height: 12px;
+    border-top: 1px solid #CBCBCB;
+}
+
+div.reimbursement .reimburseQty{
+    height: 235px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+div.reimbursement .reimburseRateAnalyse{
+    position: relative;
+    height: calc(100% - 280px);
+}
+
+div.reimbursement .reimburseQty >div:first-child{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+div.reimbursement .reimburseQty >div:first-child >div:first-child{
+    width: 100%;
+    height: 20%;
+    line-height: 26px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+div.reimbursement .reimburseQty >div:first-child >div:last-child{
+    width: 100%;
+    height: 80%;
+    max-width: 200px;
+    margin: auto;
+}
+
+div.reimbursement .reimburseQty >div:last-child{
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+div.reimbursement .reimburseQty >div:last-child #qtyTrendEchart{
+    width: 100%;
+    height: calc(100% - 15px);
+    margin: 15px auto 0px;
+}
+
+div.reimbursement .reimburseQty #sumReimburse{
+    font-size: 20px;
+    color: #76B6F1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.reimbursement .reimburseRateAnalyse .efficiencyMsg{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 18px;
+    color: #999999;
+    z-index: 1;
+}
+
+div.reimbursement .efficiencyMsg img{
+    margin-top: -5px;
+    margin-left: 8px;
+}
+
+div.reimbursement .efficiencyMsg .popover{
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 2px;
+}
+
+div.reimbursement .efficiencyMsg .popover-content{
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 12px;
+    color: #666666;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+div.reimbursement #efficiencyEchart{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
